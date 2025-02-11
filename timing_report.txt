@@ -1,0 +1,286 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Mon Sep 25 15:38:35 2023
+| Host         : scope running 64-bit Ubuntu 16.04.7 LTS
+| Command      : report_datasheet -show_all_corners -name timing_4 -file /home/scope/Desktop/hdmi/InAS_without_hdmi/vivado_proj/timing_report.txt
+| Design       : design_1_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.11 2014-09-11
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Data Sheet Report
+
+Input Ports Setup/Hold
+
+-----------+--------------+-----------+-------+---------------+---------+---------------+---------+----------+
+Reference  | Input        | IO Reg    | Delay |     Setup(ns) | Process |      Hold(ns) | Process | Internal |
+Clock      | Port         | Type      | Type  | to Clk (Edge) | Corner  | to Clk (Edge) | Corner  | Clock    |
+-----------+--------------+-----------+-------+---------------+---------+---------------+---------+----------+
+clk_fpga_0 | IIC_1_scl_io | FDRE      | -     |     0.822 (r) | SLOW    |    -0.253 (r) | SLOW    |          |
+clk_fpga_0 | IIC_1_scl_io | FDRE      | -     |     0.270 (r) | FAST    |     0.199 (r) | FAST    |          |
+clk_fpga_0 | IIC_1_sda_io | FDRE      | -     |     0.817 (r) | SLOW    |    -0.247 (r) | SLOW    |          |
+clk_fpga_0 | IIC_1_sda_io | FDRE      | -     |     0.264 (r) | FAST    |     0.204 (r) | FAST    |          |
+clk_fpga_0 | IIC_2_scl_io | FDRE      | -     |     0.830 (r) | SLOW    |    -0.260 (r) | SLOW    |          |
+clk_fpga_0 | IIC_2_scl_io | FDRE      | -     |     0.277 (r) | FAST    |     0.191 (r) | FAST    |          |
+clk_fpga_0 | IIC_2_sda_io | FDRE      | -     |     0.830 (r) | SLOW    |    -0.260 (r) | SLOW    |          |
+clk_fpga_0 | IIC_2_sda_io | FDRE      | -     |     0.277 (r) | FAST    |     0.191 (r) | FAST    |          |
+clk_fpga_0 | RS_485_1_rxd | FDRE      | -     |     0.909 (r) | SLOW    |    -0.339 (r) | SLOW    |          |
+clk_fpga_0 | RS_485_1_rxd | FDRE      | -     |     0.357 (r) | FAST    |     0.112 (r) | FAST    |          |
+clk_fpga_0 | RS_485_2_rxd | FDRE      | -     |     0.848 (r) | SLOW    |    -0.278 (r) | SLOW    |          |
+clk_fpga_0 | RS_485_2_rxd | FDRE      | -     |     0.295 (r) | FAST    |     0.173 (r) | FAST    |          |
+clk_fpga_0 | SPI_1_io0_io | FDRE (IO) | -     |     0.727 (r) | SLOW    |    -0.323 (r) | SLOW    |          |
+clk_fpga_0 | SPI_1_io0_io | FDRE (IO) | -     |     0.130 (r) | FAST    |     0.185 (r) | FAST    |          |
+clk_fpga_0 | SPI_1_io1_io | FDRE (IO) | -     |     0.677 (r) | SLOW    |    -0.273 (r) | SLOW    |          |
+clk_fpga_0 | SPI_1_io1_io | FDRE (IO) | -     |     0.080 (r) | FAST    |     0.234 (r) | FAST    |          |
+clk_fpga_0 | SPI_1_sck_io | FDRE      | -     |     0.789 (r) | SLOW    |    -0.222 (r) | SLOW    |          |
+clk_fpga_0 | SPI_1_sck_io | FDRE      | -     |     0.202 (r) | FAST    |     0.256 (r) | FAST    |          |
+clk_fpga_0 | SPI_2_io0_io | FDRE (IO) | -     |     0.697 (r) | SLOW    |    -0.294 (r) | SLOW    |          |
+clk_fpga_0 | SPI_2_io0_io | FDRE (IO) | -     |     0.101 (r) | FAST    |     0.213 (r) | FAST    |          |
+clk_fpga_0 | SPI_2_io1_io | FDRE (IO) | -     |     0.692 (r) | SLOW    |    -0.288 (r) | SLOW    |          |
+clk_fpga_0 | SPI_2_io1_io | FDRE (IO) | -     |     0.095 (r) | FAST    |     0.219 (r) | FAST    |          |
+clk_fpga_0 | SPI_2_sck_io | FDRE      | -     |     0.830 (r) | SLOW    |    -0.263 (r) | SLOW    |          |
+clk_fpga_0 | SPI_2_sck_io | FDRE      | -     |     0.243 (r) | FAST    |     0.215 (r) | FAST    |          |
+clk_fpga_3 | serial_in_0  | FDRE      | -     |     0.994 (r) | SLOW    |    -0.427 (r) | SLOW    |          |
+clk_fpga_3 | serial_in_0  | FDRE      | -     |     0.287 (r) | FAST    |     0.171 (r) | FAST    |          |
+clk_fpga_3 | serial_in_1  | FDRE      | -     |     0.996 (r) | SLOW    |    -0.430 (r) | SLOW    |          |
+clk_fpga_3 | serial_in_1  | FDRE      | -     |     0.289 (r) | FAST    |     0.169 (r) | FAST    |          |
+clk_fpga_3 | serial_in_2  | FDRE      | -     |     1.088 (r) | SLOW    |    -0.521 (r) | SLOW    |          |
+clk_fpga_3 | serial_in_2  | FDRE      | -     |     0.382 (r) | FAST    |     0.077 (r) | FAST    |          |
+clk_fpga_3 | serial_in_3  | FDRE      | -     |     1.050 (r) | SLOW    |    -0.483 (r) | SLOW    |          |
+clk_fpga_3 | serial_in_3  | FDRE      | -     |     0.343 (r) | FAST    |     0.115 (r) | FAST    |          |
+-----------+--------------+-----------+-------+---------------+---------+---------------+---------+----------+
+
+
+Output Ports Clock-to-out
+
+-----------+--------------------+--------+-------+----------------+---------+----------------+---------+----------+
+Reference  | Output             | IO Reg | Delay | Max Clk (Edge) | Process | Min Clk (Edge) | Process | Internal |
+Clock      | Port               | Type   | Type  |    to port(ns) | Corner  |    to port(ns) | Corner  | Clock    |
+-----------+--------------------+--------+-------+----------------+---------+----------------+---------+----------+
+clk_fpga_0 | IIC_1_scl_io       | FDSE   | -     |      7.715 (r) | SLOW    |      5.129 (r) | SLOW    |          |
+clk_fpga_0 | IIC_1_scl_io       | FDSE   | -     |      2.912 (r) | FAST    |      1.977 (r) | FAST    |          |
+clk_fpga_0 | IIC_1_sda_io       | FDRE   | -     |      7.829 (r) | SLOW    |      5.122 (r) | SLOW    |          |
+clk_fpga_0 | IIC_1_sda_io       | FDRE   | -     |      2.960 (r) | FAST    |      1.974 (r) | FAST    |          |
+clk_fpga_0 | IIC_2_scl_io       | FDSE   | -     |      7.723 (r) | SLOW    |      5.129 (r) | SLOW    |          |
+clk_fpga_0 | IIC_2_scl_io       | FDSE   | -     |      2.920 (r) | FAST    |      1.977 (r) | FAST    |          |
+clk_fpga_0 | IIC_2_sda_io       | FDRE   | -     |      7.842 (r) | SLOW    |      5.122 (r) | SLOW    |          |
+clk_fpga_0 | IIC_2_sda_io       | FDRE   | -     |      2.973 (r) | FAST    |      1.974 (r) | FAST    |          |
+clk_fpga_0 | RS_485_1_txd       | FDSE   | -     |      6.875 (r) | SLOW    |      6.007 (r) | SLOW    |          |
+clk_fpga_0 | RS_485_1_txd       | FDSE   | -     |      2.968 (r) | FAST    |      2.230 (r) | FAST    |          |
+clk_fpga_0 | RS_485_2_txd       | FDSE   | -     |      6.845 (r) | SLOW    |      5.976 (r) | SLOW    |          |
+clk_fpga_0 | RS_485_2_txd       | FDSE   | -     |      2.937 (r) | FAST    |      2.199 (r) | FAST    |          |
+clk_fpga_0 | RS_485_EN_tri_o[0] | FDRE   | -     |      6.859 (r) | SLOW    |      5.990 (r) | SLOW    |          |
+clk_fpga_0 | RS_485_EN_tri_o[0] | FDRE   | -     |      2.951 (r) | FAST    |      2.213 (r) | FAST    |          |
+clk_fpga_0 | RS_485_EN_tri_o[1] | FDRE   | -     |      6.865 (r) | SLOW    |      5.996 (r) | SLOW    |          |
+clk_fpga_0 | RS_485_EN_tri_o[1] | FDRE   | -     |      2.957 (r) | FAST    |      2.219 (r) | FAST    |          |
+clk_fpga_0 | RS_485_EN_tri_o[2] | FDRE   | -     |      6.879 (r) | SLOW    |      6.010 (r) | SLOW    |          |
+clk_fpga_0 | RS_485_EN_tri_o[2] | FDRE   | -     |      2.971 (r) | FAST    |      2.233 (r) | FAST    |          |
+clk_fpga_0 | RS_485_EN_tri_o[3] | FDRE   | -     |      6.867 (r) | SLOW    |      5.998 (r) | SLOW    |          |
+clk_fpga_0 | RS_485_EN_tri_o[3] | FDRE   | -     |      2.959 (r) | FAST    |      2.221 (r) | FAST    |          |
+clk_fpga_0 | SPI_1_io0_io       | FDRE   | -     |      6.886 (r) | SLOW    |      4.693 (r) | SLOW    |          |
+clk_fpga_0 | SPI_1_io0_io       | FDSE   | -     |      2.964 (r) | FAST    |      1.783 (r) | FAST    |          |
+clk_fpga_0 | SPI_1_io1_io       | FDRE   | -     |      6.836 (r) | SLOW    |      4.693 (r) | SLOW    |          |
+clk_fpga_0 | SPI_1_io1_io       | FDSE   | -     |      2.914 (r) | FAST    |      1.783 (r) | FAST    |          |
+clk_fpga_0 | SPI_1_sck_io       | FDRE   | -     |      6.837 (r) | SLOW    |      4.693 (r) | SLOW    |          |
+clk_fpga_0 | SPI_1_sck_io       | FDRE   | -     |      2.512 (r) | FAST    |      1.783 (r) | FAST    |          |
+clk_fpga_0 | SPI_1_ss_io[0]     | FDRE   | -     |      6.848 (r) | SLOW    |      4.693 (r) | SLOW    |          |
+clk_fpga_0 | SPI_1_ss_io[0]     | FDRE   | -     |      2.925 (r) | FAST    |      1.783 (r) | FAST    |          |
+clk_fpga_0 | SPI_2_io0_io       | FDRE   | -     |      6.857 (r) | SLOW    |      4.693 (r) | SLOW    |          |
+clk_fpga_0 | SPI_2_io0_io       | FDSE   | -     |      2.934 (r) | FAST    |      1.783 (r) | FAST    |          |
+clk_fpga_0 | SPI_2_io1_io       | FDRE   | -     |      6.851 (r) | SLOW    |      4.693 (r) | SLOW    |          |
+clk_fpga_0 | SPI_2_io1_io       | FDSE   | -     |      2.929 (r) | FAST    |      1.783 (r) | FAST    |          |
+clk_fpga_0 | SPI_2_sck_io       | FDRE   | -     |      6.878 (r) | SLOW    |      4.693 (r) | SLOW    |          |
+clk_fpga_0 | SPI_2_sck_io       | FDRE   | -     |      2.553 (r) | FAST    |      1.783 (r) | FAST    |          |
+clk_fpga_0 | SPI_2_ss_io[0]     | FDRE   | -     |      6.879 (r) | SLOW    |      4.693 (r) | SLOW    |          |
+clk_fpga_0 | SPI_2_ss_io[0]     | FDRE   | -     |      2.956 (r) | FAST    |      1.783 (r) | FAST    |          |
+clk_fpga_0 | gpio_tri_o[0]      | FDRE   | -     |      6.910 (r) | SLOW    |      6.041 (r) | SLOW    |          |
+clk_fpga_0 | gpio_tri_o[0]      | FDRE   | -     |      3.002 (r) | FAST    |      2.264 (r) | FAST    |          |
+clk_fpga_0 | gpio_tri_o[1]      | FDRE   | -     |      6.835 (r) | SLOW    |      5.967 (r) | SLOW    |          |
+clk_fpga_0 | gpio_tri_o[1]      | FDRE   | -     |      2.927 (r) | FAST    |      2.190 (r) | FAST    |          |
+clk_fpga_0 | gpio_tri_o[2]      | FDRE   | -     |      6.845 (r) | SLOW    |      5.976 (r) | SLOW    |          |
+clk_fpga_0 | gpio_tri_o[2]      | FDRE   | -     |      2.937 (r) | FAST    |      2.199 (r) | FAST    |          |
+clk_fpga_0 | gpio_tri_o[3]      | FDRE   | -     |      6.933 (r) | SLOW    |      6.064 (r) | SLOW    |          |
+clk_fpga_0 | gpio_tri_o[3]      | FDRE   | -     |      3.026 (r) | FAST    |      2.287 (r) | FAST    |          |
+clk_fpga_0 | gpio_tri_o[4]      | FDRE   | -     |      6.840 (r) | SLOW    |      5.971 (r) | SLOW    |          |
+clk_fpga_0 | gpio_tri_o[4]      | FDRE   | -     |      2.932 (r) | FAST    |      2.194 (r) | FAST    |          |
+clk_fpga_0 | gpio_tri_o[5]      | FDRE   | -     |      6.890 (r) | SLOW    |      6.021 (r) | SLOW    |          |
+clk_fpga_0 | gpio_tri_o[5]      | FDRE   | -     |      2.983 (r) | FAST    |      2.244 (r) | FAST    |          |
+clk_fpga_0 | gpio_tri_o[6]      | FDRE   | -     |      6.927 (r) | SLOW    |      6.058 (r) | SLOW    |          |
+clk_fpga_0 | gpio_tri_o[6]      | FDRE   | -     |      3.019 (r) | FAST    |      2.281 (r) | FAST    |          |
+clk_fpga_0 | gpio_tri_o[7]      | FDRE   | -     |      6.960 (r) | SLOW    |      6.091 (r) | SLOW    |          |
+clk_fpga_0 | gpio_tri_o[7]      | FDRE   | -     |      3.053 (r) | FAST    |      2.314 (r) | FAST    |          |
+clk_fpga_0 | gpio_tri_o[8]      | FDRE   | -     |      6.929 (r) | SLOW    |      6.060 (r) | SLOW    |          |
+clk_fpga_0 | gpio_tri_o[8]      | FDRE   | -     |      3.022 (r) | FAST    |      2.283 (r) | FAST    |          |
+clk_fpga_0 | gpio_tri_o[9]      | FDRE   | -     |      6.949 (r) | SLOW    |      6.079 (r) | SLOW    |          |
+clk_fpga_0 | gpio_tri_o[9]      | FDRE   | -     |      3.041 (r) | FAST    |      2.302 (r) | FAST    |          |
+clk_fpga_0 | gpio_tri_o[10]     | FDRE   | -     |      6.938 (r) | SLOW    |      6.069 (r) | SLOW    |          |
+clk_fpga_0 | gpio_tri_o[10]     | FDRE   | -     |      3.031 (r) | FAST    |      2.292 (r) | FAST    |          |
+clk_fpga_0 | gpio_tri_o[11]     | FDRE   | -     |      6.945 (r) | SLOW    |      6.075 (r) | SLOW    |          |
+clk_fpga_0 | gpio_tri_o[11]     | FDRE   | -     |      3.037 (r) | FAST    |      2.298 (r) | FAST    |          |
+clk_fpga_0 | gpio_tri_o[12]     | FDRE   | -     |      6.939 (r) | SLOW    |      6.070 (r) | SLOW    |          |
+clk_fpga_0 | gpio_tri_o[12]     | FDRE   | -     |      3.031 (r) | FAST    |      2.293 (r) | FAST    |          |
+clk_fpga_0 | gpio_tri_o[13]     | FDRE   | -     |      6.929 (r) | SLOW    |      6.060 (r) | SLOW    |          |
+clk_fpga_0 | gpio_tri_o[13]     | FDRE   | -     |      3.021 (r) | FAST    |      2.283 (r) | FAST    |          |
+clk_fpga_0 | gpio_tri_o[14]     | FDRE   | -     |      6.903 (r) | SLOW    |      6.034 (r) | SLOW    |          |
+clk_fpga_0 | gpio_tri_o[14]     | FDRE   | -     |      2.996 (r) | FAST    |      2.257 (r) | FAST    |          |
+clk_fpga_0 | gpio_tri_o[15]     | FDRE   | -     |      6.924 (r) | SLOW    |      6.055 (r) | SLOW    |          |
+clk_fpga_0 | gpio_tri_o[15]     | FDRE   | -     |      3.017 (r) | FAST    |      2.278 (r) | FAST    |          |
+clk_fpga_0 | gpio_tri_o[16]     | FDRE   | -     |      6.931 (r) | SLOW    |      6.061 (r) | SLOW    |          |
+clk_fpga_0 | gpio_tri_o[16]     | FDRE   | -     |      3.023 (r) | FAST    |      2.284 (r) | FAST    |          |
+clk_fpga_0 | gpio_tri_o[17]     | FDRE   | -     |      6.908 (r) | SLOW    |      6.039 (r) | SLOW    |          |
+clk_fpga_0 | gpio_tri_o[17]     | FDRE   | -     |      3.001 (r) | FAST    |      2.262 (r) | FAST    |          |
+clk_fpga_0 | gpio_tri_o[18]     | FDRE   | -     |      6.907 (r) | SLOW    |      6.038 (r) | SLOW    |          |
+clk_fpga_0 | gpio_tri_o[18]     | FDRE   | -     |      3.000 (r) | FAST    |      2.261 (r) | FAST    |          |
+clk_fpga_0 | gpio_tri_o[19]     | FDRE   | -     |      6.890 (r) | SLOW    |      6.021 (r) | SLOW    |          |
+clk_fpga_0 | gpio_tri_o[19]     | FDRE   | -     |      2.982 (r) | FAST    |      2.244 (r) | FAST    |          |
+clk_fpga_0 | gpio_tri_o[20]     | FDRE   | -     |      6.893 (r) | SLOW    |      6.024 (r) | SLOW    |          |
+clk_fpga_0 | gpio_tri_o[20]     | FDRE   | -     |      2.986 (r) | FAST    |      2.247 (r) | FAST    |          |
+clk_fpga_0 | gpio_tri_o[21]     | FDRE   | -     |      6.894 (r) | SLOW    |      6.025 (r) | SLOW    |          |
+clk_fpga_0 | gpio_tri_o[21]     | FDRE   | -     |      2.986 (r) | FAST    |      2.248 (r) | FAST    |          |
+clk_fpga_0 | gpio_tri_o[22]     | FDRE   | -     |      6.889 (r) | SLOW    |      6.020 (r) | SLOW    |          |
+clk_fpga_0 | gpio_tri_o[22]     | FDRE   | -     |      2.981 (r) | FAST    |      2.243 (r) | FAST    |          |
+clk_fpga_0 | gpio_tri_o[23]     | FDRE   | -     |      6.876 (r) | SLOW    |      6.007 (r) | SLOW    |          |
+clk_fpga_0 | gpio_tri_o[23]     | FDRE   | -     |      2.969 (r) | FAST    |      2.230 (r) | FAST    |          |
+clk_fpga_0 | gpio_tri_o[24]     | FDRE   | -     |      6.891 (r) | SLOW    |      6.023 (r) | SLOW    |          |
+clk_fpga_0 | gpio_tri_o[24]     | FDRE   | -     |      2.984 (r) | FAST    |      2.246 (r) | FAST    |          |
+clk_fpga_0 | gpio_tri_o[25]     | FDRE   | -     |      6.906 (r) | SLOW    |      6.037 (r) | SLOW    |          |
+clk_fpga_0 | gpio_tri_o[25]     | FDRE   | -     |      2.999 (r) | FAST    |      2.260 (r) | FAST    |          |
+clk_fpga_0 | gpio_tri_o[26]     | FDRE   | -     |      6.831 (r) | SLOW    |      5.962 (r) | SLOW    |          |
+clk_fpga_0 | gpio_tri_o[26]     | FDRE   | -     |      2.923 (r) | FAST    |      2.185 (r) | FAST    |          |
+clk_fpga_0 | gpio_tri_o[27]     | FDRE   | -     |      6.826 (r) | SLOW    |      5.957 (r) | SLOW    |          |
+clk_fpga_0 | gpio_tri_o[27]     | FDRE   | -     |      2.918 (r) | FAST    |      2.180 (r) | FAST    |          |
+clk_fpga_0 | gpio_tri_o[28]     | FDRE   | -     |      6.927 (r) | SLOW    |      6.058 (r) | SLOW    |          |
+clk_fpga_0 | gpio_tri_o[28]     | FDRE   | -     |      3.020 (r) | FAST    |      2.281 (r) | FAST    |          |
+clk_fpga_0 | gpio_tri_o[29]     | FDRE   | -     |      6.927 (r) | SLOW    |      6.058 (r) | SLOW    |          |
+clk_fpga_0 | gpio_tri_o[29]     | FDRE   | -     |      3.020 (r) | FAST    |      2.281 (r) | FAST    |          |
+clk_fpga_0 | gpio_tri_o[30]     | FDRE   | -     |      6.930 (r) | SLOW    |      6.061 (r) | SLOW    |          |
+clk_fpga_0 | gpio_tri_o[30]     | FDRE   | -     |      3.023 (r) | FAST    |      2.284 (r) | FAST    |          |
+clk_fpga_3 | Serial_Out_0       | FDRE   | -     |      7.179 (r) | SLOW    |      5.114 (r) | SLOW    |          |
+clk_fpga_3 | Serial_Out_0       | FDRE   | -     |      3.391 (r) | FAST    |      1.457 (r) | FAST    |          |
+clk_fpga_3 | Serial_Out_1       | FDRE   | -     |      7.201 (r) | SLOW    |      5.136 (r) | SLOW    |          |
+clk_fpga_3 | Serial_Out_1       | FDRE   | -     |      3.413 (r) | FAST    |      1.479 (r) | FAST    |          |
+clk_fpga_3 | Serial_Out_2       | FDRE   | -     |      7.243 (r) | SLOW    |      5.178 (r) | SLOW    |          |
+clk_fpga_3 | Serial_Out_2       | FDRE   | -     |      3.455 (r) | FAST    |      1.521 (r) | FAST    |          |
+clk_fpga_3 | Serial_Out_3       | FDRE   | -     |      7.188 (r) | SLOW    |      5.123 (r) | SLOW    |          |
+clk_fpga_3 | Serial_Out_3       | FDRE   | -     |      3.400 (r) | FAST    |      1.466 (r) | FAST    |          |
+-----------+--------------------+--------+-------+----------------+---------+----------------+---------+----------+
+
+
+Setup between Clocks
+
+-----------+-------------+---------------+---------+---------------+---------+---------------+---------+---------------+---------+
+Source     | Destination |  Src:Rise     | Process |  Src:Rise     | Process |  Src:Fall     | Process |  Src:Fall     | Process |
+Clock      | Clock       | Dest:Rise(ns) | Corner  | Dest:Fall(ns) | Corner  | Dest:Rise(ns) | Corner  | Dest:Fall(ns) | Corner  |
+-----------+-------------+---------------+---------+---------------+---------+---------------+---------+---------------+---------+
+clk_fpga_0 | clk_fpga_0  |        13.934 | SLOW    |               |         |               |         |               |         |
+clk_fpga_0 | clk_fpga_0  |         6.296 | FAST    |               |         |               |         |               |         |
+clk_fpga_3 | clk_fpga_0  |         2.239 | SLOW    |               |         |               |         |               |         |
+clk_fpga_3 | clk_fpga_0  |         1.452 | FAST    |               |         |               |         |               |         |
+clk_fpga_0 | clk_fpga_3  |         3.813 | SLOW    |               |         |               |         |               |         |
+clk_fpga_0 | clk_fpga_3  |         2.041 | FAST    |               |         |               |         |               |         |
+clk_fpga_3 | clk_fpga_3  |         5.465 | SLOW    |         2.391 | SLOW    |         3.089 | SLOW    |         3.807 | SLOW    |
+clk_fpga_3 | clk_fpga_3  |         2.904 | FAST    |         1.520 | FAST    |         1.854 | FAST    |         2.119 | FAST    |
+-----------+-------------+---------------+---------+---------------+---------+---------------+---------+---------------+---------+
+
+
+Max / Min delays for output bus
+Clocked by: clk_fpga_0
+Bus Skew: 0.020 ns (slow corner)
+Bus Skew: 0.020 ns (fast corner)
+-------------------+-------------+---------+-------------+---------+----------+
+                   |     Max     | Process |     Min     | Process | Edge     |
+Pad                |   Delay(ns) | Corner  |   Delay(ns) | Corner  | Skew(ns) |
+-------------------+-------------+---------+-------------+---------+----------+
+RS_485_EN_tri_o[0] |   6.859 (r) | SLOW    |   5.990 (r) | SLOW    |    0.000 |
+RS_485_EN_tri_o[0] |   2.951 (r) | FAST    |   2.213 (r) | FAST    |    0.000 |
+RS_485_EN_tri_o[1] |   6.865 (r) | SLOW    |   5.996 (r) | SLOW    |    0.006 |
+RS_485_EN_tri_o[1] |   2.957 (r) | FAST    |   2.219 (r) | FAST    |    0.006 |
+RS_485_EN_tri_o[2] |   6.879 (r) | SLOW    |   6.010 (r) | SLOW    |    0.020 |
+RS_485_EN_tri_o[2] |   2.971 (r) | FAST    |   2.233 (r) | FAST    |    0.020 |
+RS_485_EN_tri_o[3] |   6.867 (r) | SLOW    |   5.998 (r) | SLOW    |    0.008 |
+RS_485_EN_tri_o[3] |   2.959 (r) | FAST    |   2.221 (r) | FAST    |    0.008 |
+-------------------+-------------+---------+-------------+---------+----------+
+Worst Case Summary |   6.879 (r) | SLOW    |   5.990 (r) | SLOW    |    0.020 |
+Worst Case Summary |   2.971 (r) | FAST    |   2.213 (r) | FAST    |    0.020 |
+-------------------+-------------+---------+-------------+---------+----------+
+
+
+
+Max / Min delays for output bus
+Clocked by: clk_fpga_0
+Bus Skew: 0.135 ns (slow corner)
+Bus Skew: 0.135 ns (fast corner)
+-------------------+-------------+---------+-------------+---------+----------+
+                   |     Max     | Process |     Min     | Process | Edge     |
+Pad                |   Delay(ns) | Corner  |   Delay(ns) | Corner  | Skew(ns) |
+-------------------+-------------+---------+-------------+---------+----------+
+gpio_tri_o[0]      |   6.910 (r) | SLOW    |   6.041 (r) | SLOW    |    0.084 |
+gpio_tri_o[0]      |   3.002 (r) | FAST    |   2.264 (r) | FAST    |    0.084 |
+gpio_tri_o[1]      |   6.835 (r) | SLOW    |   5.967 (r) | SLOW    |    0.009 |
+gpio_tri_o[1]      |   2.927 (r) | FAST    |   2.190 (r) | FAST    |    0.009 |
+gpio_tri_o[2]      |   6.845 (r) | SLOW    |   5.976 (r) | SLOW    |    0.019 |
+gpio_tri_o[2]      |   2.937 (r) | FAST    |   2.199 (r) | FAST    |    0.019 |
+gpio_tri_o[3]      |   6.933 (r) | SLOW    |   6.064 (r) | SLOW    |    0.108 |
+gpio_tri_o[3]      |   3.026 (r) | FAST    |   2.287 (r) | FAST    |    0.108 |
+gpio_tri_o[4]      |   6.840 (r) | SLOW    |   5.971 (r) | SLOW    |    0.014 |
+gpio_tri_o[4]      |   2.932 (r) | FAST    |   2.194 (r) | FAST    |    0.014 |
+gpio_tri_o[5]      |   6.890 (r) | SLOW    |   6.021 (r) | SLOW    |    0.065 |
+gpio_tri_o[5]      |   2.983 (r) | FAST    |   2.244 (r) | FAST    |    0.065 |
+gpio_tri_o[6]      |   6.927 (r) | SLOW    |   6.058 (r) | SLOW    |    0.101 |
+gpio_tri_o[6]      |   3.019 (r) | FAST    |   2.281 (r) | FAST    |    0.101 |
+gpio_tri_o[7]      |   6.960 (r) | SLOW    |   6.091 (r) | SLOW    |    0.135 |
+gpio_tri_o[7]      |   3.053 (r) | FAST    |   2.314 (r) | FAST    |    0.135 |
+gpio_tri_o[8]      |   6.929 (r) | SLOW    |   6.060 (r) | SLOW    |    0.104 |
+gpio_tri_o[8]      |   3.022 (r) | FAST    |   2.283 (r) | FAST    |    0.104 |
+gpio_tri_o[9]      |   6.949 (r) | SLOW    |   6.079 (r) | SLOW    |    0.123 |
+gpio_tri_o[9]      |   3.041 (r) | FAST    |   2.302 (r) | FAST    |    0.123 |
+gpio_tri_o[10]     |   6.938 (r) | SLOW    |   6.069 (r) | SLOW    |    0.113 |
+gpio_tri_o[10]     |   3.031 (r) | FAST    |   2.292 (r) | FAST    |    0.113 |
+gpio_tri_o[11]     |   6.945 (r) | SLOW    |   6.075 (r) | SLOW    |    0.119 |
+gpio_tri_o[11]     |   3.037 (r) | FAST    |   2.298 (r) | FAST    |    0.119 |
+gpio_tri_o[12]     |   6.939 (r) | SLOW    |   6.070 (r) | SLOW    |    0.113 |
+gpio_tri_o[12]     |   3.031 (r) | FAST    |   2.293 (r) | FAST    |    0.113 |
+gpio_tri_o[13]     |   6.929 (r) | SLOW    |   6.060 (r) | SLOW    |    0.103 |
+gpio_tri_o[13]     |   3.021 (r) | FAST    |   2.283 (r) | FAST    |    0.103 |
+gpio_tri_o[14]     |   6.903 (r) | SLOW    |   6.034 (r) | SLOW    |    0.078 |
+gpio_tri_o[14]     |   2.996 (r) | FAST    |   2.257 (r) | FAST    |    0.078 |
+gpio_tri_o[15]     |   6.924 (r) | SLOW    |   6.055 (r) | SLOW    |    0.099 |
+gpio_tri_o[15]     |   3.017 (r) | FAST    |   2.278 (r) | FAST    |    0.099 |
+gpio_tri_o[16]     |   6.931 (r) | SLOW    |   6.061 (r) | SLOW    |    0.105 |
+gpio_tri_o[16]     |   3.023 (r) | FAST    |   2.284 (r) | FAST    |    0.105 |
+gpio_tri_o[17]     |   6.908 (r) | SLOW    |   6.039 (r) | SLOW    |    0.083 |
+gpio_tri_o[17]     |   3.001 (r) | FAST    |   2.262 (r) | FAST    |    0.083 |
+gpio_tri_o[18]     |   6.907 (r) | SLOW    |   6.038 (r) | SLOW    |    0.082 |
+gpio_tri_o[18]     |   3.000 (r) | FAST    |   2.261 (r) | FAST    |    0.082 |
+gpio_tri_o[19]     |   6.890 (r) | SLOW    |   6.021 (r) | SLOW    |    0.064 |
+gpio_tri_o[19]     |   2.982 (r) | FAST    |   2.244 (r) | FAST    |    0.064 |
+gpio_tri_o[20]     |   6.893 (r) | SLOW    |   6.024 (r) | SLOW    |    0.068 |
+gpio_tri_o[20]     |   2.986 (r) | FAST    |   2.247 (r) | FAST    |    0.068 |
+gpio_tri_o[21]     |   6.894 (r) | SLOW    |   6.025 (r) | SLOW    |    0.068 |
+gpio_tri_o[21]     |   2.986 (r) | FAST    |   2.248 (r) | FAST    |    0.068 |
+gpio_tri_o[22]     |   6.889 (r) | SLOW    |   6.020 (r) | SLOW    |    0.063 |
+gpio_tri_o[22]     |   2.981 (r) | FAST    |   2.243 (r) | FAST    |    0.063 |
+gpio_tri_o[23]     |   6.876 (r) | SLOW    |   6.007 (r) | SLOW    |    0.051 |
+gpio_tri_o[23]     |   2.969 (r) | FAST    |   2.230 (r) | FAST    |    0.051 |
+gpio_tri_o[24]     |   6.891 (r) | SLOW    |   6.023 (r) | SLOW    |    0.066 |
+gpio_tri_o[24]     |   2.984 (r) | FAST    |   2.246 (r) | FAST    |    0.066 |
+gpio_tri_o[25]     |   6.906 (r) | SLOW    |   6.037 (r) | SLOW    |    0.081 |
+gpio_tri_o[25]     |   2.999 (r) | FAST    |   2.260 (r) | FAST    |    0.081 |
+gpio_tri_o[26]     |   6.831 (r) | SLOW    |   5.962 (r) | SLOW    |    0.005 |
+gpio_tri_o[26]     |   2.923 (r) | FAST    |   2.185 (r) | FAST    |    0.005 |
+gpio_tri_o[27]     |   6.826 (r) | SLOW    |   5.957 (r) | SLOW    |    0.000 |
+gpio_tri_o[27]     |   2.918 (r) | FAST    |   2.180 (r) | FAST    |    0.000 |
+gpio_tri_o[28]     |   6.927 (r) | SLOW    |   6.058 (r) | SLOW    |    0.102 |
+gpio_tri_o[28]     |   3.020 (r) | FAST    |   2.281 (r) | FAST    |    0.102 |
+gpio_tri_o[29]     |   6.927 (r) | SLOW    |   6.058 (r) | SLOW    |    0.102 |
+gpio_tri_o[29]     |   3.020 (r) | FAST    |   2.281 (r) | FAST    |    0.102 |
+gpio_tri_o[30]     |   6.930 (r) | SLOW    |   6.061 (r) | SLOW    |    0.105 |
+gpio_tri_o[30]     |   3.023 (r) | FAST    |   2.284 (r) | FAST    |    0.105 |
+-------------------+-------------+---------+-------------+---------+----------+
+Worst Case Summary |   6.960 (r) | SLOW    |   5.957 (r) | SLOW    |    0.135 |
+Worst Case Summary |   3.053 (r) | FAST    |   2.180 (r) | FAST    |    0.135 |
+-------------------+-------------+---------+-------------+---------+----------+
+
+
+

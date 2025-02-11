@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Feb 10 14:37:45 2025
+# Process ID: 30238
+# Current directory: /home/scope/Desktop/hdmi/InAS_custom_Uart/vivado_proj/Zybo-Z7-20-HDMI.runs/design_1_auto_ds_8_synth_1
+# Command line: vivado -log design_1_auto_ds_8.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_auto_ds_8.tcl
+# Log file: /home/scope/Desktop/hdmi/InAS_custom_Uart/vivado_proj/Zybo-Z7-20-HDMI.runs/design_1_auto_ds_8_synth_1/design_1_auto_ds_8.vds
+# Journal file: /home/scope/Desktop/hdmi/InAS_custom_Uart/vivado_proj/Zybo-Z7-20-HDMI.runs/design_1_auto_ds_8_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_auto_ds_8.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/scope/Desktop/hdmi/InAS_custom_Uart/vivado_proj/Zybo-Z7-20-HDMI.ipdefs/repo_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/scope/Desktop/HISAC_FOLDER/CPU_board/SQM_Technologies/custom_uart'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/scope/Vivado/Nishant_Sir_work/axi_ddr_wr_test_2.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Vivado/2019.1/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_auto_ds_8, cache-ID = adc9ae7f22b6c38b.
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 10 14:37:56 2025...

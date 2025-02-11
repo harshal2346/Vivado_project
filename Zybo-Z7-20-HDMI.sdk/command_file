@@ -1,0 +1,49 @@
+
+###  Use below Command format to send various commands to CPU Board using Python script and 
+	test various functionalities
+
+aaaa,<ACT_CODE>,0000,0000,0000,5555 : main Request frame format from UI to Embedded Linux code
+
+aaaa,0500,0000,0000,0000,5555 : OPEN simple Operation
+aaaa,0001,0000,0000,0000,5555 : SCRM / DCRM operation
+aaaa,0002,0000,0000,0000,5555 : Main Contact
+aaaa,0003,0000,0000,0000,5555 : Auxiliary Contact
+aaaa,0004,0000,0000,0000,5555 : PIR Contact
+aaaa,0005,0000,0000,0000,5555 : OPEN simple Operation
+aaaa,1900,0000,0000,0000,5555 : CLOSE simple Operation
+aaaa,0007,0000,0000,0000,5555 : DCRM OPEN
+aaaa,1B00,0000,0000,0000,5555 : DCRM CO 
+aaaa,0009,0000,0000,0000,5555 : TIMING OPEN
+aaaa,2500,0000,0000,0000,5555 : HARDWARE CONFIG
+
+
+# for first testing of simple close command of while cycle
+aaaa,0600,0000,0000,0000,5555 : CLOSE simple Operation
+
+
+###	Below are the various types of Testing commands
+
+ACT_CODE COMMANDS
+1	SCRM
+2	Timing - Main Contact
+3	Timing - Auxiliary Contact
+4	Timing - PIR Contact
+5	Operation Check : OPEN (Simple Open)
+6	Operation Check : CLOSE (Simple Close)
+7	DCRM : OPEN
+8	DCRM : CO
+9	Timing : OPEN
+A	Timing : CLOSE
+B	Timing : CO
+C	Timing : OC
+D	Timing : OCO
+E	Timing : O-CO-CO
+F	PIR Values : CLOSE
+10	First Trip 
+11	Motor Current
+12	Config : Get Hardware configuration present in system
+
+
+
+
+

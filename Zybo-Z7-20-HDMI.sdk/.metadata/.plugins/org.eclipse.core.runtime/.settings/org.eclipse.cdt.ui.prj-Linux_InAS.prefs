@@ -1,0 +1,3 @@
+buildConsole/keepLog=true
+buildConsole/logLocation=/home/scope/Desktop/hdmi/InAS_custom_Uart/vivado_proj/Zybo-Z7-20-HDMI.sdk/.metadata/.plugins/org.eclipse.cdt.ui/Linux_InAS.build.log
+eclipse.preferences.version=1
