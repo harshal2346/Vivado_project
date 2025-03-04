@@ -20,9 +20,9 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-2
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 26432 
+INFO: Helper process launched with PID 17436 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1802.895 ; gain = 152.715 ; free physical = 7174 ; free virtual = 14701
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1802.898 ; gain = 152.715 ; free physical = 10259 ; free virtual = 14644
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_tier2_xbar_1_0' [/home/scope/Desktop/hdmi/InAS_custom_Uart/vivado_proj/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/ip/design_1_tier2_xbar_1_0/synth/design_1_tier2_xbar_1_0.v:59]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_axi_crossbar' [/home/scope/Desktop/hdmi/InAS_custom_Uart/vivado_proj/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
@@ -847,7 +847,7 @@ WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected
 WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_ruser[1]
 WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_ruser[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 1954.582 ; gain = 304.402 ; free physical = 7183 ; free virtual = 14711
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 1954.586 ; gain = 304.402 ; free physical = 10319 ; free virtual = 14702
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -860,10 +860,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 1966.457 ; gain = 316.277 ; free physical = 7187 ; free virtual = 14715
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:25 . Memory (MB): peak = 1966.461 ; gain = 316.277 ; free physical = 10321 ; free virtual = 14704
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 1966.457 ; gain = 316.277 ; free physical = 7187 ; free virtual = 14715
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:25 . Memory (MB): peak = 1966.461 ; gain = 316.277 ; free physical = 10321 ; free virtual = 14704
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 148 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -871,33 +871,30 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/scope/Desktop/hdmi/InAS_custom_Uart/vivado_proj/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/ip/design_1_tier2_xbar_1_0/design_1_tier2_xbar_1_0_ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [/home/scope/Desktop/hdmi/InAS_custom_Uart/vivado_proj/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/ip/design_1_tier2_xbar_1_0/design_1_tier2_xbar_1_0_ooc.xdc] for cell 'inst'
-Parsing XDC File [/home/scope/Desktop/hdmi/InAS_custom_Uart/vivado_proj/Zybo-Z7-20-HDMI.runs/design_1_tier2_xbar_1_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/scope/Desktop/hdmi/InAS_custom_Uart/vivado_proj/Zybo-Z7-20-HDMI.runs/design_1_tier2_xbar_1_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2116.207 ; gain = 0.000 ; free physical = 7075 ; free virtual = 14603
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2111.211 ; gain = 0.000 ; free physical = 10220 ; free virtual = 14604
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2116.207 ; gain = 0.000 ; free physical = 7073 ; free virtual = 14601
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.31 ; elapsed = 00:00:00.22 . Memory (MB): peak = 2111.211 ; gain = 0.000 ; free physical = 10216 ; free virtual = 14599
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 2116.207 ; gain = 466.027 ; free physical = 7166 ; free virtual = 14694
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:31 . Memory (MB): peak = 2111.211 ; gain = 461.027 ; free physical = 10301 ; free virtual = 14684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 2116.207 ; gain = 466.027 ; free physical = 7166 ; free virtual = 14694
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:31 . Memory (MB): peak = 2111.211 ; gain = 461.027 ; free physical = 10301 ; free virtual = 14684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/scope/Desktop/hdmi/InAS_custom_Uart/vivado_proj/Zybo-Z7-20-HDMI.runs/design_1_tier2_xbar_1_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 2116.207 ; gain = 466.027 ; free physical = 7166 ; free virtual = 14694
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:31 . Memory (MB): peak = 2111.211 ; gain = 461.027 ; free physical = 10301 ; free virtual = 14684
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4471] merging register 'gen_axi.s_axi_rvalid_i_reg' into 'gen_axi.read_cs_reg[0:0]' [/home/scope/Desktop/hdmi/InAS_custom_Uart/vivado_proj/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3669]
 INFO: [Synth 8-802] inferred FSM for state register 'gen_axi.write_cs_reg' in module 'axi_crossbar_v2_1_20_decerr_slave'
@@ -939,7 +936,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.write_cs_reg' usin
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axi_data_fifo_v2_1_18_axic_reg_srl_fifo'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 2116.207 ; gain = 466.027 ; free physical = 7158 ; free virtual = 14687
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 2111.211 ; gain = 461.027 ; free physical = 10293 ; free virtual = 14677
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1158,28 +1155,6 @@ WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_si_transactor has unconnecte
 WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_crossbar has unconnected port S_AXI_AWID[0]
 WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_crossbar has unconnected port S_AXI_WID[0]
 WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_crossbar has unconnected port S_AXI_ARID[0]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awid[0]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awuser[0]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_wid[0]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_wuser[0]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arid[0]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_aruser[0]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_buser[7]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_buser[6]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_buser[5]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_buser[4]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_buser[3]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_buser[2]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_buser[1]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_buser[0]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_ruser[7]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_ruser[6]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_ruser[5]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_ruser[4]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_ruser[3]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_ruser[2]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_ruser[1]
-WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_ruser[0]
 INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/gen_master_slots[8].reg_slice_mi/r.r_pipe/aresetn_d_reg[0]' (FDR) to 'inst/gen_samd.crossbar_samd/gen_master_slots[0].reg_slice_mi/b.b_pipe/aresetn_d_reg[0]'
 INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/gen_master_slots[8].reg_slice_mi/b.b_pipe/aresetn_d_reg[0]' (FDR) to 'inst/gen_samd.crossbar_samd/gen_master_slots[0].reg_slice_mi/b.b_pipe/aresetn_d_reg[0]'
 INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/gen_master_slots[0].reg_slice_mi/r.r_pipe/aresetn_d_reg[0]' (FDR) to 'inst/gen_samd.crossbar_samd/gen_master_slots[0].reg_slice_mi/b.b_pipe/aresetn_d_reg[0]'
@@ -1209,7 +1184,7 @@ INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/gen_master_sl
 INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_read.si_transactor_ar/gen_single_thread.active_region_reg[3]' (FDRE) to 'inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_read.si_transactor_ar/gen_single_thread.active_region_reg[0]'
 INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_read.si_transactor_ar/gen_single_thread.active_region_reg[0]' (FDRE) to 'inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_read.si_transactor_ar/gen_single_thread.active_region_reg[1]'
 INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_read.si_transactor_ar/gen_single_thread.active_region_reg[1]' (FDRE) to 'inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_read.si_transactor_ar/gen_single_thread.active_region_reg[2]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_read.si_transactor_ar/gen_single_thread.active_region_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_read.si_transactor_ar/gen_single_thread.active_region_reg[2] )
 INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/gen_master_slots[0].reg_slice_mi/b.b_pipe/aresetn_d_reg[1]' (FDR) to 'inst/gen_samd.crossbar_samd/gen_master_slots[1].reg_slice_mi/b.b_pipe/aresetn_d_reg[1]'
 INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/gen_master_slots[1].reg_slice_mi/b.b_pipe/aresetn_d_reg[1]' (FDR) to 'inst/gen_samd.crossbar_samd/gen_master_slots[2].reg_slice_mi/b.b_pipe/aresetn_d_reg[1]'
 INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/gen_master_slots[2].reg_slice_mi/b.b_pipe/aresetn_d_reg[1]' (FDR) to 'inst/gen_samd.crossbar_samd/gen_master_slots[3].reg_slice_mi/b.b_pipe/aresetn_d_reg[1]'
@@ -1221,32 +1196,32 @@ INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/gen_master_sl
 INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.si_transactor_aw/gen_single_thread.active_region_reg[3]' (FDRE) to 'inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.si_transactor_aw/gen_single_thread.active_region_reg[0]'
 INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.si_transactor_aw/gen_single_thread.active_region_reg[0]' (FDRE) to 'inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.si_transactor_aw/gen_single_thread.active_region_reg[1]'
 INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.si_transactor_aw/gen_single_thread.active_region_reg[1]' (FDRE) to 'inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.si_transactor_aw/gen_single_thread.active_region_reg[2]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.si_transactor_aw/gen_single_thread.active_region_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_target_hot_i_reg[4] )
-INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[49]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[0]'
-INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[45]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[0]'
-INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[63]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[0]'
-INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[50]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[0]'
-INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[51]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[0]'
-INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[52]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[0]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_target_hot_i_reg[4] )
-INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[49]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[0]'
-INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[45]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[0]'
-INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[63]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[0]'
-INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[50]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[0]'
-INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[51]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[0]'
-INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[52]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[0]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_read.si_transactor_ar/gen_single_thread.active_target_hot_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.si_transactor_aw/gen_single_thread.active_region_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_target_hot_i_reg[4] )
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[0]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[49]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[45]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[49]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[49]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[50]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[63]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[50]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[50]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[51]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[51]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[52]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/gen_samd.crossbar_samd/addr_arbiter_ar/gen_no_arbiter.m_mesg_i_reg[52] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_target_hot_i_reg[4] )
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[0]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[49]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[45]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[49]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[49]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[50]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[63]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[50]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[50]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[51]'
+INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[51]' (FDRE) to 'inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[52]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/gen_samd.crossbar_samd/addr_arbiter_aw/gen_no_arbiter.m_mesg_i_reg[52] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_read.si_transactor_ar/gen_single_thread.active_target_hot_reg[4] )
 INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_read.si_transactor_ar/gen_single_thread.active_target_hot_reg[8]' (FDRE) to 'inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_read.si_transactor_ar/gen_single_thread.active_target_enc_reg[3]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.si_transactor_aw/gen_single_thread.active_target_hot_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.si_transactor_aw/gen_single_thread.active_target_hot_reg[4] )
 INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.si_transactor_aw/gen_single_thread.active_target_hot_reg[8]' (FDRE) to 'inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.si_transactor_aw/gen_single_thread.active_target_enc_reg[3]'
 INFO: [Synth 8-3886] merging instance 'inst/gen_samd.crossbar_samd/gen_master_slots[8].reg_slice_mi/b.b_pipe/m_payload_i_reg[0]' (FDE) to 'inst/gen_samd.crossbar_samd/gen_master_slots[8].reg_slice_mi/b.b_pipe/m_payload_i_reg[1]'
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\gen_samd.crossbar_samd/gen_master_slots[8].reg_slice_mi/b.b_pipe/m_payload_i_reg[1] )
-INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.wdata_router_w/wrouter_aw_fifo/FSM_onehot_state_reg[2]) is unused and will be removed from module axi_crossbar_v2_1_20_axi_crossbar.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst/gen_samd.crossbar_samd/gen_master_slots[8].reg_slice_mi/b.b_pipe/m_payload_i_reg[1] )
+INFO: [Synth 8-3332] Sequential element (inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.wdata_router_w/wrouter_aw_fifo/FSM_onehot_state_reg[2]) is unused and will be removed from module design_1_tier2_xbar_1_0.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:39 . Memory (MB): peak = 2116.207 ; gain = 466.027 ; free physical = 7127 ; free virtual = 14661
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:38 . Memory (MB): peak = 2111.211 ; gain = 461.027 ; free physical = 10264 ; free virtual = 14652
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1258,13 +1233,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:44 . Memory (MB): peak = 2116.207 ; gain = 466.027 ; free physical = 7008 ; free virtual = 14542
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:43 . Memory (MB): peak = 2111.211 ; gain = 461.027 ; free physical = 10144 ; free virtual = 14533
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:47 . Memory (MB): peak = 2116.207 ; gain = 466.027 ; free physical = 6979 ; free virtual = 14513
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:43 . Memory (MB): peak = 2111.211 ; gain = 461.027 ; free physical = 10144 ; free virtual = 14532
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1276,7 +1251,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 2116.207 ; gain = 466.027 ; free physical = 6979 ; free virtual = 14513
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:44 . Memory (MB): peak = 2111.211 ; gain = 461.027 ; free physical = 10140 ; free virtual = 14529
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1300,7 +1275,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:49 . Memory (MB): peak = 2116.207 ; gain = 466.027 ; free physical = 6979 ; free virtual = 14512
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:45 . Memory (MB): peak = 2111.211 ; gain = 461.027 ; free physical = 10140 ; free virtual = 14528
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1313,7 +1288,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:49 . Memory (MB): peak = 2116.207 ; gain = 466.027 ; free physical = 6979 ; free virtual = 14512
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:45 . Memory (MB): peak = 2111.211 ; gain = 461.027 ; free physical = 10140 ; free virtual = 14528
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1325,25 +1300,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:49 . Memory (MB): peak = 2116.207 ; gain = 466.027 ; free physical = 6979 ; free virtual = 14512
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:45 . Memory (MB): peak = 2111.211 ; gain = 461.027 ; free physical = 10141 ; free virtual = 14529
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:49 . Memory (MB): peak = 2116.207 ; gain = 466.027 ; free physical = 6979 ; free virtual = 14512
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:45 . Memory (MB): peak = 2111.211 ; gain = 461.027 ; free physical = 10141 ; free virtual = 14529
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:49 . Memory (MB): peak = 2116.207 ; gain = 466.027 ; free physical = 6980 ; free virtual = 14513
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:45 . Memory (MB): peak = 2111.211 ; gain = 461.027 ; free physical = 10141 ; free virtual = 14529
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:49 . Memory (MB): peak = 2116.207 ; gain = 466.027 ; free physical = 6980 ; free virtual = 14514
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:45 . Memory (MB): peak = 2111.211 ; gain = 461.027 ; free physical = 10141 ; free virtual = 14529
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1378,10 +1353,10 @@ Report Instance Areas:
 +------+---------------------------------------------------------+------------------------------------------------------------------+------+
 |1     |top                                                      |                                                                  |  2597|
 |2     |  inst                                                   |axi_crossbar_v2_1_20_axi_crossbar                                 |  2597|
-|3     |    \gen_samd.crossbar_samd                              |axi_crossbar_v2_1_20_crossbar                                     |  2597|
+|3     |    \gen_samd.crossbar_samd                              |axi_crossbar_v2_1_20_crossbar                                     |  2583|
 |4     |      addr_arbiter_ar                                    |axi_crossbar_v2_1_20_addr_arbiter                                 |   136|
-|5     |      addr_arbiter_aw                                    |axi_crossbar_v2_1_20_addr_arbiter_0                               |   126|
-|6     |      \gen_decerr_slave.decerr_slave_inst                |axi_crossbar_v2_1_20_decerr_slave                                 |    42|
+|5     |      addr_arbiter_aw                                    |axi_crossbar_v2_1_20_addr_arbiter_0                               |   125|
+|6     |      \gen_decerr_slave.decerr_slave_inst                |axi_crossbar_v2_1_20_decerr_slave                                 |    37|
 |7     |      \gen_master_slots[0].reg_slice_mi                  |axi_register_slice_v2_1_19_axi_register_slice                     |   222|
 |8     |        \b.b_pipe                                        |axi_register_slice_v2_1_19_axic_register_slice__parameterized1_27 |    11|
 |9     |        \r.r_pipe                                        |axi_register_slice_v2_1_19_axic_register_slice__parameterized2_28 |   211|
@@ -1403,19 +1378,19 @@ Report Instance Areas:
 |25    |      \gen_master_slots[6].reg_slice_mi                  |axi_register_slice_v2_1_19_axi_register_slice_6                   |   219|
 |26    |        \b.b_pipe                                        |axi_register_slice_v2_1_19_axic_register_slice__parameterized1_15 |    11|
 |27    |        \r.r_pipe                                        |axi_register_slice_v2_1_19_axic_register_slice__parameterized2_16 |   208|
-|28    |      \gen_master_slots[7].reg_slice_mi                  |axi_register_slice_v2_1_19_axi_register_slice_7                   |   222|
-|29    |        \b.b_pipe                                        |axi_register_slice_v2_1_19_axic_register_slice__parameterized1_13 |    14|
+|28    |      \gen_master_slots[7].reg_slice_mi                  |axi_register_slice_v2_1_19_axi_register_slice_7                   |   220|
+|29    |        \b.b_pipe                                        |axi_register_slice_v2_1_19_axic_register_slice__parameterized1_13 |    12|
 |30    |        \r.r_pipe                                        |axi_register_slice_v2_1_19_axic_register_slice__parameterized2_14 |   208|
-|31    |      \gen_master_slots[8].reg_slice_mi                  |axi_register_slice_v2_1_19_axi_register_slice_8                   |    16|
-|32    |        \b.b_pipe                                        |axi_register_slice_v2_1_19_axic_register_slice__parameterized1    |     5|
-|33    |        \r.r_pipe                                        |axi_register_slice_v2_1_19_axic_register_slice__parameterized2    |    11|
-|34    |      \gen_slave_slots[0].gen_si_read.si_transactor_ar   |axi_crossbar_v2_1_20_si_transactor                                |   313|
-|35    |        \gen_single_thread.mux_resp_single_thread        |generic_baseblocks_v2_1_0_mux_enc                                 |   273|
-|36    |      \gen_slave_slots[0].gen_si_write.si_transactor_aw  |axi_crossbar_v2_1_20_si_transactor__parameterized0                |    68|
-|37    |        \gen_single_thread.mux_resp_single_thread        |generic_baseblocks_v2_1_0_mux_enc__parameterized0                 |    15|
+|31    |      \gen_master_slots[8].reg_slice_mi                  |axi_register_slice_v2_1_19_axi_register_slice_8                   |    13|
+|32    |        \b.b_pipe                                        |axi_register_slice_v2_1_19_axic_register_slice__parameterized1    |     4|
+|33    |        \r.r_pipe                                        |axi_register_slice_v2_1_19_axic_register_slice__parameterized2    |     9|
+|34    |      \gen_slave_slots[0].gen_si_read.si_transactor_ar   |axi_crossbar_v2_1_20_si_transactor                                |   312|
+|35    |        \gen_single_thread.mux_resp_single_thread        |generic_baseblocks_v2_1_0_mux_enc                                 |   272|
+|36    |      \gen_slave_slots[0].gen_si_write.si_transactor_aw  |axi_crossbar_v2_1_20_si_transactor__parameterized0                |    67|
+|37    |        \gen_single_thread.mux_resp_single_thread        |generic_baseblocks_v2_1_0_mux_enc__parameterized0                 |    14|
 |38    |      \gen_slave_slots[0].gen_si_write.splitter_aw_si    |axi_crossbar_v2_1_20_splitter                                     |     7|
-|39    |      \gen_slave_slots[0].gen_si_write.wdata_router_w    |axi_crossbar_v2_1_20_wdata_router                                 |    56|
-|40    |        wrouter_aw_fifo                                  |axi_data_fifo_v2_1_18_axic_reg_srl_fifo                           |    56|
+|39    |      \gen_slave_slots[0].gen_si_write.wdata_router_w    |axi_crossbar_v2_1_20_wdata_router                                 |    55|
+|40    |        wrouter_aw_fifo                                  |axi_data_fifo_v2_1_18_axic_reg_srl_fifo                           |    55|
 |41    |          \gen_srls[0].gen_rep[0].srl_nx1                |axi_data_fifo_v2_1_18_ndeep_srl__parameterized0                   |     4|
 |42    |          \gen_srls[0].gen_rep[1].srl_nx1                |axi_data_fifo_v2_1_18_ndeep_srl__parameterized0_10                |     2|
 |43    |          \gen_srls[0].gen_rep[2].srl_nx1                |axi_data_fifo_v2_1_18_ndeep_srl__parameterized0_11                |     2|
@@ -1423,34 +1398,34 @@ Report Instance Areas:
 |45    |      splitter_aw_mi                                     |axi_crossbar_v2_1_20_splitter_9                                   |     5|
 +------+---------------------------------------------------------+------------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:49 . Memory (MB): peak = 2116.207 ; gain = 466.027 ; free physical = 6980 ; free virtual = 14514
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:45 . Memory (MB): peak = 2111.211 ; gain = 461.027 ; free physical = 10141 ; free virtual = 14529
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 36 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:46 . Memory (MB): peak = 2116.207 ; gain = 316.277 ; free physical = 7035 ; free virtual = 14568
-Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:49 . Memory (MB): peak = 2116.207 ; gain = 466.027 ; free physical = 7035 ; free virtual = 14568
+Synthesis finished with 0 errors, 0 critical warnings and 14 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 2111.211 ; gain = 316.277 ; free physical = 10195 ; free virtual = 14583
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:45 . Memory (MB): peak = 2111.211 ; gain = 461.027 ; free physical = 10195 ; free virtual = 14583
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 140 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2116.207 ; gain = 0.000 ; free physical = 6981 ; free virtual = 14514
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2111.211 ; gain = 0.000 ; free physical = 10140 ; free virtual = 14529
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-187 Infos, 114 Warnings, 0 Critical Warnings and 0 Errors encountered.
+187 Infos, 93 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:54 . Memory (MB): peak = 2116.207 ; gain = 693.562 ; free physical = 7091 ; free virtual = 14624
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2116.207 ; gain = 0.000 ; free physical = 7091 ; free virtual = 14624
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:49 . Memory (MB): peak = 2111.211 ; gain = 688.562 ; free physical = 10238 ; free virtual = 14627
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2111.211 ; gain = 0.000 ; free physical = 10238 ; free virtual = 14627
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/scope/Desktop/hdmi/InAS_custom_Uart/vivado_proj/Zybo-Z7-20-HDMI.runs/design_1_tier2_xbar_1_0_synth_1/design_1_tier2_xbar_1_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_tier2_xbar_1_0, cache-ID = 65ac6c6db72fa64b
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_tier2_xbar_1_0, cache-ID = 98c2cf16f9b57e59
 INFO: [Coretcl 2-1174] Renamed 44 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2140.219 ; gain = 0.000 ; free physical = 7090 ; free virtual = 14627
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2135.223 ; gain = 0.000 ; free physical = 10237 ; free virtual = 14629
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/scope/Desktop/hdmi/InAS_custom_Uart/vivado_proj/Zybo-Z7-20-HDMI.runs/design_1_tier2_xbar_1_0_synth_1/design_1_tier2_xbar_1_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_tier2_xbar_1_0_utilization_synth.rpt -pb design_1_tier2_xbar_1_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Feb 10 14:25:59 2025...
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 25 11:27:49 2025...

@@ -164,6 +164,10 @@ proc create_root_design { parentCell } {
   # Create interface ports
   set ADC_BUSY [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 ADC_BUSY ]
 
+  set CAN_0 [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:can_rtl:1.0 CAN_0 ]
+
+  set CAN_1 [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:can_rtl:1.0 CAN_1 ]
+
   set CMN_GPIO [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 CMN_GPIO ]
 
   set DDR [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:ddrx_rtl:1.0 DDR ]
@@ -190,9 +194,9 @@ proc create_root_design { parentCell } {
 
   set SPARE_GPIO [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 SPARE_GPIO ]
 
-  set SPARE_SPI_1 [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:spi_rtl:1.0 SPARE_SPI_1 ]
+  set SPARE_I2C [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:iic_rtl:1.0 SPARE_I2C ]
 
-  set SPARE_SPI_PS [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:spi_rtl:1.0 SPARE_SPI_PS ]
+  set SPARE_SPI_1 [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:spi_rtl:1.0 SPARE_SPI_1 ]
 
   set SPI_ADC [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:spi_rtl:1.0 SPI_ADC ]
 
@@ -204,6 +208,10 @@ proc create_root_design { parentCell } {
   set RS_485_2_TX [ create_bd_port -dir O -from 0 -to 0 RS_485_2_TX ]
   set RS_485_RX [ create_bd_port -dir I -from 0 -to 0 RS_485_RX ]
   set RS_485_TX [ create_bd_port -dir O -from 0 -to 0 RS_485_TX ]
+  set SPI0_MISO_I_0 [ create_bd_port -dir I SPI0_MISO_I_0 ]
+  set SPI0_MOSI_O_0 [ create_bd_port -dir O SPI0_MOSI_O_0 ]
+  set SPI0_SCLK_O_0 [ create_bd_port -dir O SPI0_SCLK_O_0 ]
+  set SPI0_SS_O_0 [ create_bd_port -dir O SPI0_SS_O_0 ]
   set Serial_Out_0 [ create_bd_port -dir O -from 0 -to 0 Serial_Out_0 ]
   set Serial_Out_1 [ create_bd_port -dir O -from 0 -to 0 Serial_Out_1 ]
   set Serial_Out_2 [ create_bd_port -dir O -from 0 -to 0 Serial_Out_2 ]
@@ -467,7 +475,7 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_ACT_FPGA0_PERIPHERAL_FREQMHZ {100.000000} \
    CONFIG.PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ {200.000000} \
    CONFIG.PCW_ACT_FPGA2_PERIPHERAL_FREQMHZ {5.000000} \
-   CONFIG.PCW_ACT_FPGA3_PERIPHERAL_FREQMHZ {15.873016} \
+   CONFIG.PCW_ACT_FPGA3_PERIPHERAL_FREQMHZ {20.000000} \
    CONFIG.PCW_ACT_I2C_PERIPHERAL_FREQMHZ {50} \
    CONFIG.PCW_ACT_PCAP_PERIPHERAL_FREQMHZ {200.000000} \
    CONFIG.PCW_ACT_QSPI_PERIPHERAL_FREQMHZ {200.000000} \
@@ -511,7 +519,7 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_CLK0_FREQ {100000000} \
    CONFIG.PCW_CLK1_FREQ {200000000} \
    CONFIG.PCW_CLK2_FREQ {5000000} \
-   CONFIG.PCW_CLK3_FREQ {15873016} \
+   CONFIG.PCW_CLK3_FREQ {20000000} \
    CONFIG.PCW_CORE0_FIQ_INTR {0} \
    CONFIG.PCW_CORE0_IRQ_INTR {0} \
    CONFIG.PCW_CORE1_FIQ_INTR {0} \
@@ -643,8 +651,8 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_FCLK2_PERIPHERAL_DIVISOR0 {20} \
    CONFIG.PCW_FCLK2_PERIPHERAL_DIVISOR1 {10} \
    CONFIG.PCW_FCLK3_PERIPHERAL_CLKSRC {IO PLL} \
-   CONFIG.PCW_FCLK3_PERIPHERAL_DIVISOR0 {63} \
-   CONFIG.PCW_FCLK3_PERIPHERAL_DIVISOR1 {1} \
+   CONFIG.PCW_FCLK3_PERIPHERAL_DIVISOR0 {10} \
+   CONFIG.PCW_FCLK3_PERIPHERAL_DIVISOR1 {5} \
    CONFIG.PCW_FCLK_CLK0_BUF {TRUE} \
    CONFIG.PCW_FCLK_CLK1_BUF {TRUE} \
    CONFIG.PCW_FCLK_CLK2_BUF {TRUE} \
@@ -652,7 +660,7 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {100} \
    CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ {200} \
    CONFIG.PCW_FPGA2_PERIPHERAL_FREQMHZ {5} \
-   CONFIG.PCW_FPGA3_PERIPHERAL_FREQMHZ {16} \
+   CONFIG.PCW_FPGA3_PERIPHERAL_FREQMHZ {20} \
    CONFIG.PCW_FPGA_FCLK0_ENABLE {1} \
    CONFIG.PCW_FPGA_FCLK1_ENABLE {1} \
    CONFIG.PCW_FPGA_FCLK2_ENABLE {1} \
@@ -1353,11 +1361,12 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net axi_quad_spi_0_SPI_1 [get_bd_intf_ports SPARE_SPI_1] [get_bd_intf_pins SPARE_SPI_1/SPI_0]
   connect_bd_intf_net -intf_net axi_uartlite_1_UART [get_bd_intf_ports RS_232_1] [get_bd_intf_pins RS_232_1/UART]
   connect_bd_intf_net -intf_net gmii_to_rgmii_0_RGMII [get_bd_intf_ports RGMII_0] [get_bd_intf_pins gmii_to_rgmii_0/RGMII]
+  connect_bd_intf_net -intf_net processing_system7_0_CAN_0 [get_bd_intf_ports CAN_0] [get_bd_intf_pins processing_system7_0/CAN_0]
+  connect_bd_intf_net -intf_net processing_system7_0_CAN_1 [get_bd_intf_ports CAN_1] [get_bd_intf_pins processing_system7_0/CAN_1]
   connect_bd_intf_net -intf_net processing_system7_0_DDR [get_bd_intf_ports DDR] [get_bd_intf_pins processing_system7_0/DDR]
   connect_bd_intf_net -intf_net processing_system7_0_FIXED_IO [get_bd_intf_ports FIXED_IO] [get_bd_intf_pins processing_system7_0/FIXED_IO]
   connect_bd_intf_net -intf_net processing_system7_0_GMII_ETHERNET_1 [get_bd_intf_pins gmii_to_rgmii_0/GMII] [get_bd_intf_pins processing_system7_0/GMII_ETHERNET_1]
   connect_bd_intf_net -intf_net processing_system7_0_M_AXI_GP0 [get_bd_intf_pins processing_system7_0/M_AXI_GP0] [get_bd_intf_pins ps7_0_axi_periph_GP0/S00_AXI]
-  connect_bd_intf_net -intf_net processing_system7_0_SPI_0 [get_bd_intf_ports SPARE_SPI_PS] [get_bd_intf_pins processing_system7_0/SPI_0]
   connect_bd_intf_net -intf_net ps7_0_axi_periph_GP0_M00_AXI [get_bd_intf_pins axi_lvds_v2_0_0/s00_axi] [get_bd_intf_pins ps7_0_axi_periph_GP0/M00_AXI]
   connect_bd_intf_net -intf_net ps7_0_axi_periph_GP0_M01_AXI [get_bd_intf_pins axi_lvds_v2_0_1/s00_axi] [get_bd_intf_pins ps7_0_axi_periph_GP0/M01_AXI]
   connect_bd_intf_net -intf_net ps7_0_axi_periph_GP0_M02_AXI [get_bd_intf_pins axi_lvds_v2_0_2/s00_axi] [get_bd_intf_pins ps7_0_axi_periph_GP0/M02_AXI]
@@ -1386,12 +1395,13 @@ proc create_root_design { parentCell } {
   connect_bd_net -net RS_232_2_interrupt [get_bd_pins RS_232_2/interrupt] [get_bd_pins xlconcat_0/In5]
   connect_bd_net -net RS_485_2_RX_1 [get_bd_ports RS_485_2_RX] [get_bd_pins filter_5/i_r_sig]
   connect_bd_net -net RS_485_2_Serial_Out [get_bd_ports RS_485_2_TX] [get_bd_pins RS_485_2/Serial_Out]
+  connect_bd_net -net SPARE_SPI_1_ip2intc_irpt [get_bd_pins SPARE_SPI_1/ip2intc_irpt] [get_bd_pins xlconcat_0/In0]
+  connect_bd_net -net SPI0_MISO_I_0_1 [get_bd_ports SPI0_MISO_I_0] [get_bd_pins processing_system7_0/SPI0_MISO_I]
   connect_bd_net -net axi_lvds_v2_0_0_Serial_Out [get_bd_ports Serial_Out_0] [get_bd_pins axi_lvds_v2_0_0/Serial_Out]
   connect_bd_net -net axi_lvds_v2_0_1_Serial_Out [get_bd_ports Serial_Out_1] [get_bd_pins axi_lvds_v2_0_1/Serial_Out]
   connect_bd_net -net axi_lvds_v2_0_2_Serial_Out [get_bd_ports Serial_Out_2] [get_bd_pins axi_lvds_v2_0_2/Serial_Out]
   connect_bd_net -net axi_lvds_v2_0_3_Serial_Out [get_bd_ports Serial_Out_3] [get_bd_pins axi_lvds_v2_0_3/Serial_Out]
   connect_bd_net -net axi_lvds_v2_0_4_Serial_Out [get_bd_ports RS_485_TX] [get_bd_pins RS_485_1/Serial_Out]
-  connect_bd_net -net axi_quad_spi_0_ip2intc_irpt [get_bd_pins SPARE_SPI_1/ip2intc_irpt] [get_bd_pins xlconcat_0/In3]
   connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins gmii_to_rgmii_0/clkin]
   connect_bd_net -net clk_wiz_0_clk_out2 [get_bd_pins clk_wiz_0/clk_out2] [get_bd_pins gmii_to_rgmii_0/gmii_clk] [get_bd_pins proc_sys_reset_0/slowest_sync_clk]
   connect_bd_net -net cmn_clk_0_o_cmn_clk [get_bd_ports CMN_CLK] [get_bd_pins cmn_clk_0/o_cmn_clk]
@@ -1405,6 +1415,9 @@ proc create_root_design { parentCell } {
   connect_bd_net -net processing_system7_0_FCLK_CLK2 [get_bd_ports BUS_CLK] [get_bd_pins processing_system7_0/FCLK_CLK2]
   connect_bd_net -net processing_system7_0_FCLK_CLK3 [get_bd_pins SPARE_SPI_1/ext_spi_clk] [get_bd_pins SPI_ADC/ext_spi_clk] [get_bd_pins processing_system7_0/FCLK_CLK3]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins proc_sys_reset_0/ext_reset_in] [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins rst_ps7_0_100M/ext_reset_in] [get_bd_pins util_vector_logic_0/Op1]
+  connect_bd_net -net processing_system7_0_SPI0_MOSI_O [get_bd_ports SPI0_MOSI_O_0] [get_bd_pins processing_system7_0/SPI0_MOSI_O]
+  connect_bd_net -net processing_system7_0_SPI0_SCLK_O [get_bd_ports SPI0_SCLK_O_0] [get_bd_pins processing_system7_0/SPI0_SCLK_O]
+  connect_bd_net -net processing_system7_0_SPI0_SS_O [get_bd_ports SPI0_SS_O_0] [get_bd_pins processing_system7_0/SPI0_SS_O]
   connect_bd_net -net rst_ps7_0_100M_peripheral_aresetn [get_bd_pins ADC_BUSY/s_axi_aresetn] [get_bd_pins CMN_GPIO/s_axi_aresetn] [get_bd_pins EXTRA_UART/s_axi_aresetn] [get_bd_pins LED_EN/s_axi_aresetn] [get_bd_pins LVDS_EN/s_axi_aresetn] [get_bd_pins RST_STR/s_axi_aresetn] [get_bd_pins RS_232_1/s_axi_aresetn] [get_bd_pins RS_232_2/s_axi_aresetn] [get_bd_pins RS_485_1/s00_axi_aresetn] [get_bd_pins RS_485_2/s00_axi_aresetn] [get_bd_pins RS_485_EN/s_axi_aresetn] [get_bd_pins SLOT_EN/s_axi_aresetn] [get_bd_pins SPARE_GPIO/s_axi_aresetn] [get_bd_pins SPARE_SPI_1/s_axi_aresetn] [get_bd_pins SPI_ADC/s_axi_aresetn] [get_bd_pins axi_lvds_v2_0_0/s00_axi_aresetn] [get_bd_pins axi_lvds_v2_0_1/s00_axi_aresetn] [get_bd_pins axi_lvds_v2_0_2/s00_axi_aresetn] [get_bd_pins axi_lvds_v2_0_3/s00_axi_aresetn] [get_bd_pins cmn_clk_0/i_rst] [get_bd_pins filter_0/i_rst] [get_bd_pins filter_1/i_rst] [get_bd_pins filter_2/i_rst] [get_bd_pins filter_3/i_rst] [get_bd_pins filter_4/i_rst] [get_bd_pins filter_5/i_rst] [get_bd_pins ps7_0_axi_periph_GP0/ARESETN] [get_bd_pins ps7_0_axi_periph_GP0/M00_ARESETN] [get_bd_pins ps7_0_axi_periph_GP0/M01_ARESETN] [get_bd_pins ps7_0_axi_periph_GP0/M02_ARESETN] [get_bd_pins ps7_0_axi_periph_GP0/M03_ARESETN] [get_bd_pins ps7_0_axi_periph_GP0/M04_ARESETN] [get_bd_pins ps7_0_axi_periph_GP0/M05_ARESETN] [get_bd_pins ps7_0_axi_periph_GP0/M06_ARESETN] [get_bd_pins ps7_0_axi_periph_GP0/M07_ARESETN] [get_bd_pins ps7_0_axi_periph_GP0/M08_ARESETN] [get_bd_pins ps7_0_axi_periph_GP0/M09_ARESETN] [get_bd_pins ps7_0_axi_periph_GP0/M10_ARESETN] [get_bd_pins ps7_0_axi_periph_GP0/M11_ARESETN] [get_bd_pins ps7_0_axi_periph_GP0/M12_ARESETN] [get_bd_pins ps7_0_axi_periph_GP0/M13_ARESETN] [get_bd_pins ps7_0_axi_periph_GP0/M14_ARESETN] [get_bd_pins ps7_0_axi_periph_GP0/M15_ARESETN] [get_bd_pins ps7_0_axi_periph_GP0/M16_ARESETN] [get_bd_pins ps7_0_axi_periph_GP0/M17_ARESETN] [get_bd_pins ps7_0_axi_periph_GP0/M18_ARESETN] [get_bd_pins ps7_0_axi_periph_GP0/M19_ARESETN] [get_bd_pins ps7_0_axi_periph_GP0/M20_ARESETN] [get_bd_pins ps7_0_axi_periph_GP0/M21_ARESETN] [get_bd_pins ps7_0_axi_periph_GP0/S00_ARESETN] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
   connect_bd_net -net serial_in_0_1 [get_bd_ports serial_in_0] [get_bd_pins filter_0/i_r_sig]
   connect_bd_net -net serial_in_1_1 [get_bd_ports serial_in_1] [get_bd_pins filter_1/i_r_sig]

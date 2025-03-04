@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="design_1_RS_485_0_synth_1" LaunchPart="xc7z020clg400-2" LaunchTime="1737372858">
-  <File Type="PA-TCL" Name="design_1_RS_485_0.tcl"/>
   <File Type="RDS-DCP" Name="design_1_RS_485_0.dcp"/>
+  <File Type="PA-TCL" Name="design_1_RS_485_0.tcl"/>
   <File Type="REPORTS-TCL" Name="design_1_RS_485_0_reports.tcl"/>
   <File Type="RDS-RDS" Name="design_1_RS_485_0.vds"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_RS_485_0">

@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
--- Date        : Mon Feb 10 14:28:49 2025
+-- Date        : Thu Dec 19 15:22:27 2024
 -- Host        : scope running 64-bit Ubuntu 16.04.7 LTS
 -- Command     : write_vhdl -force -mode synth_stub -rename_top design_1_auto_ds_2 -prefix
 --               design_1_auto_ds_2_ design_1_auto_ds_0_stub.vhdl

@@ -1,131 +1,133 @@
-11:28:33 **** Auto Build of configuration Debug for project Linux_InAS ****
+09:45:32 **** Auto Build of configuration Debug for project Linux_InAS ****
 make all 
 Building file: ../Application/app.c
 Invoking: ARM v7 Linux gcc compiler
 arm-linux-gnueabihf-gcc -lrt -lpthread -Wall -O0 -g3 -I"/home/scope/Desktop/hdmi/InAS_custom_Uart/vivado_proj/Zybo-Z7-20-HDMI.sdk/Linux_InAS/Peripherals/Custom_uart" -I"/home/scope/Desktop/hdmi/InAS_custom_Uart/vivado_proj/Zybo-Z7-20-HDMI.sdk/Linux_InAS/Peripherals/Timer" -I"/home/scope/Desktop/hdmi/InAS_custom_Uart/vivado_proj/Zybo-Z7-20-HDMI.sdk/Linux_InAS/Peripherals/Gpio" -I"/home/scope/Desktop/hdmi/InAS_custom_Uart/vivado_proj/Zybo-Z7-20-HDMI.sdk/Linux_InAS/Application" -c -fmessage-length=0 -MT"Application/app.o" -MMD -MP -MF"Application/app.d" -MT"Application/app.o" -o "Application/app.o" "../Application/app.c"
 ../Application/app.c: In function ‘read_socket’:
-../Application/app.c:411:6: warning: "/*" within comment [-Wcomment]
+../Application/app.c:340:4: warning: implicit declaration of function ‘gpio_Led_en’ [-Wimplicit-function-declaration]
+    gpio_Led_en(1);
+    ^~~~~~~~~~~
+../Application/app.c:414:6: warning: "/*" within comment [-Wcomment]
  //   /* Currently for testing purpose we will use only one
        
 ../Application/app.c: In function ‘communication_slot_1’:
-../Application/app.c:692:4: warning: implicit declaration of function ‘gpio_rs485_tx_en’ [-Wimplicit-function-declaration]
+../Application/app.c:725:4: warning: implicit declaration of function ‘gpio_rs485_tx_en’ [-Wimplicit-function-declaration]
     gpio_rs485_tx_en();
     ^~~~~~~~~~~~~~~~
-../Application/app.c:724:26: warning: initialization of ‘uint16_t *’ {aka ‘short unsigned int *’} from incompatible pointer type ‘uint8_t *’ {aka ‘unsigned char *’} [-Wincompatible-pointer-types]
+../Application/app.c:757:26: warning: initialization of ‘uint16_t *’ {aka ‘short unsigned int *’} from incompatible pointer type ‘uint8_t *’ {aka ‘unsigned char *’} [-Wincompatible-pointer-types]
       uint16_t *p16_d_1 = (u8_c_buff + 1);
                           ^
-../Application/app.c:742:8: warning: implicit declaration of function ‘set_channels’ [-Wimplicit-function-declaration]
+../Application/app.c:775:8: warning: implicit declaration of function ‘set_channels’ [-Wimplicit-function-declaration]
         set_channels(p16_d_1[5]);
         ^~~~~~~~~~~~
-../Application/app.c:853:27: warning: initialization of ‘uint16_t *’ {aka ‘short unsigned int *’} from incompatible pointer type ‘uint8_t *’ {aka ‘unsigned char *’} [-Wincompatible-pointer-types]
+../Application/app.c:886:27: warning: initialization of ‘uint16_t *’ {aka ‘short unsigned int *’} from incompatible pointer type ‘uint8_t *’ {aka ‘unsigned char *’} [-Wincompatible-pointer-types]
        uint16_t *p16_d_1 = (u8_c_buff + 1);
                            ^
-../Application/app.c:1085:25: warning: initialization of ‘uint16_t *’ {aka ‘short unsigned int *’} from incompatible pointer type ‘uint8_t *’ {aka ‘unsigned char *’} [-Wincompatible-pointer-types]
+../Application/app.c:1118:25: warning: initialization of ‘uint16_t *’ {aka ‘short unsigned int *’} from incompatible pointer type ‘uint8_t *’ {aka ‘unsigned char *’} [-Wincompatible-pointer-types]
        uint16_t *p16_d = u8_data_resp + 1;
                          ^~~~~~~~~~~~
-../Application/app.c:664:6: warning: variable ‘i_sem_ret’ set but not used [-Wunused-but-set-variable]
+../Application/app.c:697:6: warning: variable ‘i_sem_ret’ set but not used [-Wunused-but-set-variable]
   int i_sem_ret;
       ^~~~~~~~~
 ../Application/app.c: In function ‘communication_slot_2’:
-../Application/app.c:1470:26: warning: initialization of ‘uint16_t *’ {aka ‘short unsigned int *’} from incompatible pointer type ‘uint8_t *’ {aka ‘unsigned char *’} [-Wincompatible-pointer-types]
+../Application/app.c:1503:26: warning: initialization of ‘uint16_t *’ {aka ‘short unsigned int *’} from incompatible pointer type ‘uint8_t *’ {aka ‘unsigned char *’} [-Wincompatible-pointer-types]
       uint16_t *p16_d_1 = (u8_c_buff + 1);
                           ^
-../Application/app.c:1597:27: warning: initialization of ‘uint16_t *’ {aka ‘short unsigned int *’} from incompatible pointer type ‘uint8_t *’ {aka ‘unsigned char *’} [-Wincompatible-pointer-types]
+../Application/app.c:1630:27: warning: initialization of ‘uint16_t *’ {aka ‘short unsigned int *’} from incompatible pointer type ‘uint8_t *’ {aka ‘unsigned char *’} [-Wincompatible-pointer-types]
        uint16_t *p16_d_1 = (u8_c_buff + 1);
                            ^
-../Application/app.c:1800:25: warning: initialization of ‘uint16_t *’ {aka ‘short unsigned int *’} from incompatible pointer type ‘uint8_t *’ {aka ‘unsigned char *’} [-Wincompatible-pointer-types]
+../Application/app.c:1833:25: warning: initialization of ‘uint16_t *’ {aka ‘short unsigned int *’} from incompatible pointer type ‘uint8_t *’ {aka ‘unsigned char *’} [-Wincompatible-pointer-types]
        uint16_t *p16_d = u8_data_resp + 1;
                          ^~~~~~~~~~~~
-../Application/app.c:1410:6: warning: variable ‘i_sem_ret’ set but not used [-Wunused-but-set-variable]
+../Application/app.c:1443:6: warning: variable ‘i_sem_ret’ set but not used [-Wunused-but-set-variable]
   int i_sem_ret;
       ^~~~~~~~~
 ../Application/app.c: In function ‘communication_slot_3’:
-../Application/app.c:2163:26: warning: initialization of ‘uint16_t *’ {aka ‘short unsigned int *’} from incompatible pointer type ‘uint8_t *’ {aka ‘unsigned char *’} [-Wincompatible-pointer-types]
+../Application/app.c:2196:26: warning: initialization of ‘uint16_t *’ {aka ‘short unsigned int *’} from incompatible pointer type ‘uint8_t *’ {aka ‘unsigned char *’} [-Wincompatible-pointer-types]
       uint16_t *p16_d_1 = (u8_c_buff + 1);
                           ^
-../Application/app.c:2288:27: warning: initialization of ‘uint16_t *’ {aka ‘short unsigned int *’} from incompatible pointer type ‘uint8_t *’ {aka ‘unsigned char *’} [-Wincompatible-pointer-types]
+../Application/app.c:2321:27: warning: initialization of ‘uint16_t *’ {aka ‘short unsigned int *’} from incompatible pointer type ‘uint8_t *’ {aka ‘unsigned char *’} [-Wincompatible-pointer-types]
        uint16_t *p16_d_1 = (u8_c_buff + 1);
                            ^
-../Application/app.c:2485:25: warning: initialization of ‘uint16_t *’ {aka ‘short unsigned int *’} from incompatible pointer type ‘uint8_t *’ {aka ‘unsigned char *’} [-Wincompatible-pointer-types]
+../Application/app.c:2518:25: warning: initialization of ‘uint16_t *’ {aka ‘short unsigned int *’} from incompatible pointer type ‘uint8_t *’ {aka ‘unsigned char *’} [-Wincompatible-pointer-types]
        uint16_t *p16_d = u8_data_resp + 1;
                          ^~~~~~~~~~~~
-../Application/app.c:2103:6: warning: variable ‘i_sem_ret’ set but not used [-Wunused-but-set-variable]
+../Application/app.c:2136:6: warning: variable ‘i_sem_ret’ set but not used [-Wunused-but-set-variable]
   int i_sem_ret;
       ^~~~~~~~~
 ../Application/app.c: In function ‘communication_slot_4’:
-../Application/app.c:2856:17: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+../Application/app.c:2889:17: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
      printf("rd %d\r\n",i_read_count);
                 ~^      ~~~~~~~~~~~~
                 %ld
-../Application/app.c:2862:26: warning: initialization of ‘uint16_t *’ {aka ‘short unsigned int *’} from incompatible pointer type ‘uint8_t *’ {aka ‘unsigned char *’} [-Wincompatible-pointer-types]
+../Application/app.c:2895:26: warning: initialization of ‘uint16_t *’ {aka ‘short unsigned int *’} from incompatible pointer type ‘uint8_t *’ {aka ‘unsigned char *’} [-Wincompatible-pointer-types]
       uint16_t *p16_d_1 = (u8_c_buff + 1);
                           ^
-../Application/app.c:2988:18: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+../Application/app.c:3021:18: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
       printf("rd %d\r\n",i_read_count);
                  ~^      ~~~~~~~~~~~~
                  %ld
-../Application/app.c:3005:27: warning: initialization of ‘uint16_t *’ {aka ‘short unsigned int *’} from incompatible pointer type ‘uint8_t *’ {aka ‘unsigned char *’} [-Wincompatible-pointer-types]
+../Application/app.c:3038:27: warning: initialization of ‘uint16_t *’ {aka ‘short unsigned int *’} from incompatible pointer type ‘uint8_t *’ {aka ‘unsigned char *’} [-Wincompatible-pointer-types]
        uint16_t *p16_d_1 = (u8_c_buff + 1);
                            ^
-../Application/app.c:2792:6: warning: variable ‘i_sem_ret’ set but not used [-Wunused-but-set-variable]
+../Application/app.c:2825:6: warning: variable ‘i_sem_ret’ set but not used [-Wunused-but-set-variable]
   int i_sem_ret;
       ^~~~~~~~~
-../Application/app.c:2788:12: warning: unused variable ‘u32_count’ [-Wunused-variable]
+../Application/app.c:2821:12: warning: unused variable ‘u32_count’ [-Wunused-variable]
   uint32_t  u32_count = 0;
             ^~~~~~~~~
-../Application/app.c:2783:30: warning: unused variable ‘u16_max_iter’ [-Wunused-variable]
+../Application/app.c:2816:30: warning: unused variable ‘u16_max_iter’ [-Wunused-variable]
   uint16_t  u16_iteration = 0,u16_max_iter = 0;
                               ^~~~~~~~~~~~
-../Application/app.c:2779:11: warning: unused variable ‘i32_data’ [-Wunused-variable]
+../Application/app.c:2812:11: warning: unused variable ‘i32_data’ [-Wunused-variable]
   int32_t  i32_data = 0;
            ^~~~~~~~
-../Application/app.c:2778:12: warning: unused variable ‘p32_data_shm’ [-Wunused-variable]
+../Application/app.c:2811:12: warning: unused variable ‘p32_data_shm’ [-Wunused-variable]
   int32_t  *p32_data_shm[4] ;
             ^~~~~~~~~~~~
-../Application/app.c:2777:12: warning: unused variable ‘p32_data’ [-Wunused-variable]
+../Application/app.c:2810:12: warning: unused variable ‘p32_data’ [-Wunused-variable]
   int32_t  *p32_data = NULL;
             ^~~~~~~~
-../Application/app.c:2774:11: warning: unused variable ‘u8_data_resp’ [-Wunused-variable]
+../Application/app.c:2807:11: warning: unused variable ‘u8_data_resp’ [-Wunused-variable]
   uint8_t  u8_data_resp[4004] = {0};
            ^~~~~~~~~~~~
 ../Application/app.c: In function ‘frame_req_MB_DCRM_unit’:
-../Application/app.c:4029:2: warning: implicit declaration of function ‘custom_uart_RS485_write’; did you mean ‘custom_uart_4_write’? [-Wimplicit-function-declaration]
-  custom_uart_RS485_write((uint8_t *)u16_data,58);
-  ^~~~~~~~~~~~~~~~~~~~~~~
-  custom_uart_4_write
+../Application/app.c:4090:11: warning: variable ‘u16_data’ set but not used [-Wunused-but-set-variable]
+  uint16_t u16_data[30] = {0};
+           ^~~~~~~~
 ../Application/app.c: In function ‘frame_respone_validate’:
-../Application/app.c:4039:11: warning: unused variable ‘u16_checksum’ [-Wunused-variable]
+../Application/app.c:4146:11: warning: unused variable ‘u16_checksum’ [-Wunused-variable]
   uint16_t u16_checksum = 0;
            ^~~~~~~~~~~~
 ../Application/app.c: At top level:
-../Application/app.c:4294:6: warning: conflicting types for ‘set_channels’
+../Application/app.c:4426:6: warning: conflicting types for ‘set_channels’
  void set_channels(uint8_t u8_card_address)
       ^~~~~~~~~~~~
-../Application/app.c:742:8: note: previous implicit declaration of ‘set_channels’ was here
+../Application/app.c:775:8: note: previous implicit declaration of ‘set_channels’ was here
         set_channels(p16_d_1[5]);
         ^~~~~~~~~~~~
 ../Application/app.c: In function ‘opto_wait’:
-../Application/app.c:4665:11: warning: unused variable ‘u16_msg_norm’ [-Wunused-variable]
+../Application/app.c:4796:11: warning: unused variable ‘u16_msg_norm’ [-Wunused-variable]
   uint16_t u16_msg_norm[28]= {
            ^~~~~~~~~~~~
-../Application/app.c:4663:6: warning: variable ‘i_read_count’ set but not used [-Wunused-but-set-variable]
+../Application/app.c:4794:6: warning: variable ‘i_read_count’ set but not used [-Wunused-but-set-variable]
   int i_read_count = 0;
       ^~~~~~~~~~~~
 ../Application/app.c: In function ‘config_hardware’:
-../Application/app.c:4775:24: warning: initialization of ‘uint16_t *’ {aka ‘short unsigned int *’} from incompatible pointer type ‘uint8_t *’ {aka ‘unsigned char *’} [-Wincompatible-pointer-types]
+../Application/app.c:4906:24: warning: initialization of ‘uint16_t *’ {aka ‘short unsigned int *’} from incompatible pointer type ‘uint8_t *’ {aka ‘unsigned char *’} [-Wincompatible-pointer-types]
     uint16_t *p16_d_1 = (u8_c_buff + 1);
                         ^
-../Application/app.c:4810:24: warning: initialization of ‘uint16_t *’ {aka ‘short unsigned int *’} from incompatible pointer type ‘uint8_t *’ {aka ‘unsigned char *’} [-Wincompatible-pointer-types]
+../Application/app.c:4941:24: warning: initialization of ‘uint16_t *’ {aka ‘short unsigned int *’} from incompatible pointer type ‘uint8_t *’ {aka ‘unsigned char *’} [-Wincompatible-pointer-types]
     uint16_t *p16_d_1 = (u8_c_buff + 1);
                         ^
-../Application/app.c:4845:24: warning: initialization of ‘uint16_t *’ {aka ‘short unsigned int *’} from incompatible pointer type ‘uint8_t *’ {aka ‘unsigned char *’} [-Wincompatible-pointer-types]
+../Application/app.c:4976:24: warning: initialization of ‘uint16_t *’ {aka ‘short unsigned int *’} from incompatible pointer type ‘uint8_t *’ {aka ‘unsigned char *’} [-Wincompatible-pointer-types]
     uint16_t *p16_d_1 = (u8_c_buff + 1);
                         ^
-../Application/app.c:4880:24: warning: initialization of ‘uint16_t *’ {aka ‘short unsigned int *’} from incompatible pointer type ‘uint8_t *’ {aka ‘unsigned char *’} [-Wincompatible-pointer-types]
+../Application/app.c:5011:24: warning: initialization of ‘uint16_t *’ {aka ‘short unsigned int *’} from incompatible pointer type ‘uint8_t *’ {aka ‘unsigned char *’} [-Wincompatible-pointer-types]
     uint16_t *p16_d_1 = (u8_c_buff + 1);
                         ^
 ../Application/app.c: In function ‘system_configuration’:
-../Application/app.c:4960:11: warning: unused variable ‘u8_MB_unit_cards’ [-Wunused-variable]
+../Application/app.c:5091:11: warning: unused variable ‘u8_MB_unit_cards’ [-Wunused-variable]
   uint8_t  u8_MB_unit_cards[7] = {5,6,7,8,9,10,11};
            ^~~~~~~~~~~~~~~~
 Finished building: ../Application/app.c
@@ -138,9 +140,9 @@ Finished building target: Linux_InAS.elf
 Invoking: ARM v7 Linux Print Size
 arm-linux-gnueabihf-size Linux_InAS.elf  |tee "Linux_InAS.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  73558	    507	   2064	  76129	  12961	Linux_InAS.elf
+  82127	    503	   2124	  84754	  14b12	Linux_InAS.elf
 Finished building: Linux_InAS.elf.size
  
 
-11:28:34 Build Finished (took 1s.70ms)
+09:45:33 Build Finished (took 1s.28ms)
 

@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-//Date        : Mon Feb 10 14:21:01 2025
+//Date        : Tue Feb 25 11:25:16 2025
 //Host        : scope running 64-bit Ubuntu 16.04.7 LTS
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -12,6 +12,10 @@
 module design_1_wrapper
    (ADC_BUSY_tri_i,
     BUS_CLK,
+    CAN_0_rx,
+    CAN_0_tx,
+    CAN_1_rx,
+    CAN_1_tx,
     CMN_CLK,
     CMN_GPIO_tri_o,
     DDR_addr,
@@ -61,12 +65,10 @@ module design_1_wrapper
     SPARE_SPI_1_io1_io,
     SPARE_SPI_1_sck_io,
     SPARE_SPI_1_ss_io,
-    SPARE_SPI_PS_io0_io,
-    SPARE_SPI_PS_io1_io,
-    SPARE_SPI_PS_sck_io,
-    SPARE_SPI_PS_ss1_o,
-    SPARE_SPI_PS_ss2_o,
-    SPARE_SPI_PS_ss_io,
+    SPI0_MISO_I_0,
+    SPI0_MOSI_O_0,
+    SPI0_SCLK_O_0,
+    SPI0_SS_O_0,
     SPI_ADC_io0_io,
     SPI_ADC_io1_io,
     SPI_ADC_sck_io,
@@ -81,6 +83,10 @@ module design_1_wrapper
     serial_in_3);
   input [0:0]ADC_BUSY_tri_i;
   output BUS_CLK;
+  input CAN_0_rx;
+  output CAN_0_tx;
+  input CAN_1_rx;
+  output CAN_1_tx;
   output CMN_CLK;
   output [12:0]CMN_GPIO_tri_o;
   inout [14:0]DDR_addr;
@@ -130,12 +136,10 @@ module design_1_wrapper
   inout SPARE_SPI_1_io1_io;
   inout SPARE_SPI_1_sck_io;
   inout [0:0]SPARE_SPI_1_ss_io;
-  inout SPARE_SPI_PS_io0_io;
-  inout SPARE_SPI_PS_io1_io;
-  inout SPARE_SPI_PS_sck_io;
-  output SPARE_SPI_PS_ss1_o;
-  output SPARE_SPI_PS_ss2_o;
-  inout SPARE_SPI_PS_ss_io;
+  input SPI0_MISO_I_0;
+  output SPI0_MOSI_O_0;
+  output SPI0_SCLK_O_0;
+  output SPI0_SS_O_0;
   inout SPI_ADC_io0_io;
   inout SPI_ADC_io1_io;
   inout SPI_ADC_sck_io;
@@ -151,6 +155,10 @@ module design_1_wrapper
 
   wire [0:0]ADC_BUSY_tri_i;
   wire BUS_CLK;
+  wire CAN_0_rx;
+  wire CAN_0_tx;
+  wire CAN_1_rx;
+  wire CAN_1_tx;
   wire CMN_CLK;
   wire [12:0]CMN_GPIO_tri_o;
   wire [14:0]DDR_addr;
@@ -212,24 +220,10 @@ module design_1_wrapper
   wire [0:0]SPARE_SPI_1_ss_io_0;
   wire [0:0]SPARE_SPI_1_ss_o_0;
   wire SPARE_SPI_1_ss_t;
-  wire SPARE_SPI_PS_io0_i;
-  wire SPARE_SPI_PS_io0_io;
-  wire SPARE_SPI_PS_io0_o;
-  wire SPARE_SPI_PS_io0_t;
-  wire SPARE_SPI_PS_io1_i;
-  wire SPARE_SPI_PS_io1_io;
-  wire SPARE_SPI_PS_io1_o;
-  wire SPARE_SPI_PS_io1_t;
-  wire SPARE_SPI_PS_sck_i;
-  wire SPARE_SPI_PS_sck_io;
-  wire SPARE_SPI_PS_sck_o;
-  wire SPARE_SPI_PS_sck_t;
-  wire SPARE_SPI_PS_ss1_o;
-  wire SPARE_SPI_PS_ss2_o;
-  wire SPARE_SPI_PS_ss_i;
-  wire SPARE_SPI_PS_ss_io;
-  wire SPARE_SPI_PS_ss_o;
-  wire SPARE_SPI_PS_ss_t;
+  wire SPI0_MISO_I_0;
+  wire SPI0_MOSI_O_0;
+  wire SPI0_SCLK_O_0;
+  wire SPI0_SS_O_0;
   wire SPI_ADC_io0_i;
   wire SPI_ADC_io0_io;
   wire SPI_ADC_io0_o;
@@ -275,26 +269,6 @@ module design_1_wrapper
         .IO(SPARE_SPI_1_ss_io[0]),
         .O(SPARE_SPI_1_ss_i_0),
         .T(SPARE_SPI_1_ss_t));
-  IOBUF SPARE_SPI_PS_io0_iobuf
-       (.I(SPARE_SPI_PS_io0_o),
-        .IO(SPARE_SPI_PS_io0_io),
-        .O(SPARE_SPI_PS_io0_i),
-        .T(SPARE_SPI_PS_io0_t));
-  IOBUF SPARE_SPI_PS_io1_iobuf
-       (.I(SPARE_SPI_PS_io1_o),
-        .IO(SPARE_SPI_PS_io1_io),
-        .O(SPARE_SPI_PS_io1_i),
-        .T(SPARE_SPI_PS_io1_t));
-  IOBUF SPARE_SPI_PS_sck_iobuf
-       (.I(SPARE_SPI_PS_sck_o),
-        .IO(SPARE_SPI_PS_sck_io),
-        .O(SPARE_SPI_PS_sck_i),
-        .T(SPARE_SPI_PS_sck_t));
-  IOBUF SPARE_SPI_PS_ss_iobuf
-       (.I(SPARE_SPI_PS_ss_o),
-        .IO(SPARE_SPI_PS_ss_io),
-        .O(SPARE_SPI_PS_ss_i),
-        .T(SPARE_SPI_PS_ss_t));
   IOBUF SPI_ADC_io0_iobuf
        (.I(SPI_ADC_io0_o),
         .IO(SPI_ADC_io0_io),
@@ -318,6 +292,10 @@ module design_1_wrapper
   design_1 design_1_i
        (.ADC_BUSY_tri_i(ADC_BUSY_tri_i),
         .BUS_CLK(BUS_CLK),
+        .CAN_0_rx(CAN_0_rx),
+        .CAN_0_tx(CAN_0_tx),
+        .CAN_1_rx(CAN_1_rx),
+        .CAN_1_tx(CAN_1_tx),
         .CMN_CLK(CMN_CLK),
         .CMN_GPIO_tri_o(CMN_GPIO_tri_o),
         .DDR_addr(DDR_addr),
@@ -375,20 +353,10 @@ module design_1_wrapper
         .SPARE_SPI_1_ss_i(SPARE_SPI_1_ss_i_0),
         .SPARE_SPI_1_ss_o(SPARE_SPI_1_ss_o_0),
         .SPARE_SPI_1_ss_t(SPARE_SPI_1_ss_t),
-        .SPARE_SPI_PS_io0_i(SPARE_SPI_PS_io0_i),
-        .SPARE_SPI_PS_io0_o(SPARE_SPI_PS_io0_o),
-        .SPARE_SPI_PS_io0_t(SPARE_SPI_PS_io0_t),
-        .SPARE_SPI_PS_io1_i(SPARE_SPI_PS_io1_i),
-        .SPARE_SPI_PS_io1_o(SPARE_SPI_PS_io1_o),
-        .SPARE_SPI_PS_io1_t(SPARE_SPI_PS_io1_t),
-        .SPARE_SPI_PS_sck_i(SPARE_SPI_PS_sck_i),
-        .SPARE_SPI_PS_sck_o(SPARE_SPI_PS_sck_o),
-        .SPARE_SPI_PS_sck_t(SPARE_SPI_PS_sck_t),
-        .SPARE_SPI_PS_ss1_o(SPARE_SPI_PS_ss1_o),
-        .SPARE_SPI_PS_ss2_o(SPARE_SPI_PS_ss2_o),
-        .SPARE_SPI_PS_ss_i(SPARE_SPI_PS_ss_i),
-        .SPARE_SPI_PS_ss_o(SPARE_SPI_PS_ss_o),
-        .SPARE_SPI_PS_ss_t(SPARE_SPI_PS_ss_t),
+        .SPI0_MISO_I_0(SPI0_MISO_I_0),
+        .SPI0_MOSI_O_0(SPI0_MOSI_O_0),
+        .SPI0_SCLK_O_0(SPI0_SCLK_O_0),
+        .SPI0_SS_O_0(SPI0_SS_O_0),
         .SPI_ADC_io0_i(SPI_ADC_io0_i),
         .SPI_ADC_io0_o(SPI_ADC_io0_o),
         .SPI_ADC_io0_t(SPI_ADC_io0_t),

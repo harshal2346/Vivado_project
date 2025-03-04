@@ -73,6 +73,8 @@ int main() {
         set_card_status(2);
     }
 
+    /*  setting for slot 1 for travel channels */
+
        
     return 0;
 }

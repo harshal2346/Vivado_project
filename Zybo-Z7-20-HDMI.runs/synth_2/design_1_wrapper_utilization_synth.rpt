@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Fri Jan 31 17:41:03 2025
+| Date         : Mon Feb 24 14:51:07 2025
 | Host         : scope running 64-bit Ubuntu 16.04.7 LTS
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
@@ -90,7 +90,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   82 |     0 |       125 | 65.60 |
+| Bonded IOB                  |   86 |     0 |       125 | 68.80 |
 | Bonded IPADs                |    0 |     0 |         2 |  0.00 |
 | Bonded IOPADs               |    0 |     0 |       130 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         4 |  0.00 |
@@ -146,9 +146,9 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| OBUF     |   60 |                  IO |
-| IBUF     |   22 |                  IO |
-| OBUFT    |   12 |                  IO |
+| OBUF     |   65 |                  IO |
+| IBUF     |   21 |                  IO |
+| OBUFT    |    8 |                  IO |
 +----------+------+---------------------+
 
 
@@ -178,7 +178,6 @@ Table of Contents
 | design_1_axi_uartlite_1_2       |    1 |
 | design_1_axi_uartlite_1_1       |    1 |
 | design_1_axi_uartlite_1_0       |    1 |
-| design_1_axi_quad_spi_1_0       |    1 |
 | design_1_axi_quad_spi_0_3       |    1 |
 | design_1_axi_quad_spi_0_2       |    1 |
 | design_1_axi_lvds_v2_0_3_1      |    1 |
@@ -195,17 +194,29 @@ Table of Contents
 | design_1_axi_gpio_0_1           |    1 |
 | design_1_axi_gpio_0_0           |    1 |
 | design_1_auto_us_0              |    1 |
+| design_1_auto_pc_9              |    1 |
+| design_1_auto_pc_8              |    1 |
+| design_1_auto_pc_7              |    1 |
 | design_1_auto_pc_6              |    1 |
 | design_1_auto_pc_5              |    1 |
 | design_1_auto_pc_4              |    1 |
 | design_1_auto_pc_3              |    1 |
 | design_1_auto_pc_2              |    1 |
+| design_1_auto_pc_12             |    1 |
+| design_1_auto_pc_11             |    1 |
+| design_1_auto_pc_10             |    1 |
 | design_1_auto_pc_1              |    1 |
 | design_1_auto_pc_0              |    1 |
+| design_1_auto_ds_9              |    1 |
+| design_1_auto_ds_8              |    1 |
+| design_1_auto_ds_7              |    1 |
+| design_1_auto_ds_6              |    1 |
 | design_1_auto_ds_5              |    1 |
 | design_1_auto_ds_4              |    1 |
 | design_1_auto_ds_3              |    1 |
 | design_1_auto_ds_2              |    1 |
+| design_1_auto_ds_11             |    1 |
+| design_1_auto_ds_10             |    1 |
 | design_1_auto_ds_1              |    1 |
 | design_1_auto_ds_0              |    1 |
 | design_1_RS_485_0               |    1 |
